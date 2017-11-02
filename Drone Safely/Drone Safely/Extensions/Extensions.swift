@@ -16,7 +16,11 @@ extension UIViewController: SFSafariViewControllerDelegate {
 //            let vc = SFSafariViewController(url: url)
 //            vc.delegate = self
 //            self.present(vc, animated: true)
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         } else {
             showAlert("Opening link error", message: "There was an error trying to open the web link.")
         }
