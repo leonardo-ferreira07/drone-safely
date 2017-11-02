@@ -34,7 +34,7 @@ class LoginViewController: BaseOnTheMapViewController {
             showAlert("Connection Error", message: "Seems that you don't have internet connection.")
             return
         }
-        if let email = emailTextField.text, let password = passwordTextField.text, email.isValidEmail(), password.characters.count > 0 {
+        if let email = emailTextField.text, let password = passwordTextField.text, email.isValidEmail(), password.count > 0 {
             
         } else {
             self.view.stopLoadingAnimation()

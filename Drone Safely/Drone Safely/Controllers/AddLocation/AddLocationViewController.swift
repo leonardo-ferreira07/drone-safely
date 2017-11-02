@@ -67,12 +67,12 @@ extension AddLocationViewController {
     func getGeocoder() {
         resignTextFields()
         
-        guard let location = locationTextField.text, location.characters.count > 0 else {
+        guard let location = locationTextField.text, location.count > 0 else {
             showAlert("Location Error", message: "You must insert a location before continue.")
             return
         }
         
-        guard let link = linkTextField.text, link.characters.count > 0 else {
+        guard let link = linkTextField.text, link.count > 0 else {
             showAlert("Location Error", message: "You must insert a media link before continue.")
             return
         }
