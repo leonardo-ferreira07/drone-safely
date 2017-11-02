@@ -4,6 +4,7 @@ platform :ios, '9.3'
 target 'Drone Safely' do
 
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'Drone SafelyTests' do
     inherit! :search_paths
