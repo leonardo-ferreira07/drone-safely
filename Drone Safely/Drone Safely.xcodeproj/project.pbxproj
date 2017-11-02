@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7974D24BEDECFA1F1F303A55 /* libPods-Drone Safely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */; };
 		A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D761FAB307800BD557A /* AppDelegate.swift */; };
 		A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7D1FAB307800BD557A /* Assets.xcassets */; };
 		A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */; };
@@ -32,6 +33,7 @@
 		A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E271FAB327600BD557A /* Reachability.swift */; };
 		A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E281FAB327600BD557A /* ParserHelper.swift */; };
 		A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */; };
+		E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2219EDB0D4B0FE4F1257E57F /* Pods-Drone SafelyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone SafelyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests.release.xcconfig"; sourceTree = "<group>"; };
+		5634CD11A47E129450442E1C /* Pods-Drone Safely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone Safely.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely.release.xcconfig"; sourceTree = "<group>"; };
+		5980FFD4F895BC20AACDE17C /* Pods-Drone SafelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone SafelyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		759236E01F5E4F7ABBDE9452 /* Pods-Drone Safely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone Safely.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely.debug.xcconfig"; sourceTree = "<group>"; };
 		A7719D731FAB307800BD557A /* Drone Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Safely.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7719D761FAB307800BD557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7719D7D1FAB307800BD557A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		A7719E271FAB327600BD557A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A7719E281FAB327600BD557A /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 		A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone Safely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone SafelyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7974D24BEDECFA1F1F303A55 /* libPods-Drone Safely.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,18 +97,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6906EB36FCA7F06E1C5D22F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				759236E01F5E4F7ABBDE9452 /* Pods-Drone Safely.debug.xcconfig */,
+				5634CD11A47E129450442E1C /* Pods-Drone Safely.release.xcconfig */,
+				5980FFD4F895BC20AACDE17C /* Pods-Drone SafelyTests.debug.xcconfig */,
+				2219EDB0D4B0FE4F1257E57F /* Pods-Drone SafelyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D3F4F63DB89DF88646FEC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */,
+				EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7719D6A1FAB307800BD557A = {
 			isa = PBXGroup;
 			children = (
 				A7719D751FAB307800BD557A /* Drone Safely */,
 				A7719D8A1FAB307800BD557A /* Drone SafelyTests */,
 				A7719D741FAB307800BD557A /* Products */,
+				6906EB36FCA7F06E1C5D22F2 /* Pods */,
+				9D3F4F63DB89DF88646FEC62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7719D901FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone Safely" */;
 			buildPhases = (
+				623EE9BE2E92D49212F0C605 /* [CP] Check Pods Manifest.lock */,
 				A7719D6F1FAB307800BD557A /* Sources */,
 				A7719D701FAB307800BD557A /* Frameworks */,
 				A7719D711FAB307800BD557A /* Resources */,
+				E776169AC7BF02724711B309 /* [CP] Embed Pods Frameworks */,
+				D5B897C9A59B4D7C441BB776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7719D931FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone SafelyTests" */;
 			buildPhases = (
+				1793FA6C91F9577210C4AD16 /* [CP] Check Pods Manifest.lock */,
 				A7719D831FAB307800BD557A /* Sources */,
 				A7719D841FAB307800BD557A /* Frameworks */,
 				A7719D851FAB307800BD557A /* Resources */,
+				20C4AB831E0A92625536DA3E /* [CP] Embed Pods Frameworks */,
+				A4ED0D6E5D8F213BD0AA1485 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,6 +421,105 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1793FA6C91F9577210C4AD16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drone SafelyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20C4AB831E0A92625536DA3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623EE9BE2E92D49212F0C605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drone Safely-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4ED0D6E5D8F213BD0AA1485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B897C9A59B4D7C441BB776 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E776169AC7BF02724711B309 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7719D6F1FAB307800BD557A /* Sources */ = {
@@ -556,6 +693,7 @@
 		};
 		A7719D911FAB307800BD557A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759236E01F5E4F7ABBDE9452 /* Pods-Drone Safely.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +709,7 @@
 		};
 		A7719D921FAB307800BD557A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5634CD11A47E129450442E1C /* Pods-Drone Safely.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +725,7 @@
 		};
 		A7719D941FAB307800BD557A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5980FFD4F895BC20AACDE17C /* Pods-Drone SafelyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -602,6 +742,7 @@
 		};
 		A7719D951FAB307800BD557A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2219EDB0D4B0FE4F1257E57F /* Pods-Drone SafelyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
