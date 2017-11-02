@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D761FAB307800BD557A /* AppDelegate.swift */; };
+		A7719D791FAB307800BD557A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D781FAB307800BD557A /* ViewController.swift */; };
+		A7719D7C1FAB307800BD557A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7A1FAB307800BD557A /* Main.storyboard */; };
+		A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7D1FAB307800BD557A /* Assets.xcassets */; };
+		A7719D811FAB307800BD557A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */; };
+		A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7719D881FAB307800BD557A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7719D6B1FAB307800BD557A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7719D721FAB307800BD557A;
+			remoteInfo = "Drone Safely";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7719D731FAB307800BD557A /* Drone Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Safely.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7719D761FAB307800BD557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7719D781FAB307800BD557A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7719D7B1FAB307800BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7719D7D1FAB307800BD557A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7719D801FAB307800BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7719D821FAB307800BD557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7719D871FAB307800BD557A /* Drone SafelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drone SafelyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone_SafelyTests.swift; sourceTree = "<group>"; };
+		A7719D8D1FAB307800BD557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7719D701FAB307800BD557A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7719D841FAB307800BD557A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7719D6A1FAB307800BD557A = {
+			isa = PBXGroup;
+			children = (
+				A7719D751FAB307800BD557A /* Drone Safely */,
+				A7719D8A1FAB307800BD557A /* Drone SafelyTests */,
+				A7719D741FAB307800BD557A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7719D741FAB307800BD557A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7719D731FAB307800BD557A /* Drone Safely.app */,
+				A7719D871FAB307800BD557A /* Drone SafelyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7719D751FAB307800BD557A /* Drone Safely */ = {
+			isa = PBXGroup;
+			children = (
+				A7719D761FAB307800BD557A /* AppDelegate.swift */,
+				A7719D781FAB307800BD557A /* ViewController.swift */,
+				A7719D7A1FAB307800BD557A /* Main.storyboard */,
+				A7719D7D1FAB307800BD557A /* Assets.xcassets */,
+				A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */,
+				A7719D821FAB307800BD557A /* Info.plist */,
+			);
+			path = "Drone Safely";
+			sourceTree = "<group>";
+		};
+		A7719D8A1FAB307800BD557A /* Drone SafelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */,
+				A7719D8D1FAB307800BD557A /* Info.plist */,
+			);
+			path = "Drone SafelyTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7719D721FAB307800BD557A /* Drone Safely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7719D901FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone Safely" */;
+			buildPhases = (
+				A7719D6F1FAB307800BD557A /* Sources */,
+				A7719D701FAB307800BD557A /* Frameworks */,
+				A7719D711FAB307800BD557A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drone Safely";
+			productName = "Drone Safely";
+			productReference = A7719D731FAB307800BD557A /* Drone Safely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7719D861FAB307800BD557A /* Drone SafelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7719D931FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone SafelyTests" */;
+			buildPhases = (
+				A7719D831FAB307800BD557A /* Sources */,
+				A7719D841FAB307800BD557A /* Frameworks */,
+				A7719D851FAB307800BD557A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7719D891FAB307800BD557A /* PBXTargetDependency */,
+			);
+			name = "Drone SafelyTests";
+			productName = "Drone SafelyTests";
+			productReference = A7719D871FAB307800BD557A /* Drone SafelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7719D6B1FAB307800BD557A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Leonardo Vinicius Kaminski Ferreira";
+				TargetAttributes = {
+					A7719D721FAB307800BD557A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A7719D861FAB307800BD557A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A7719D721FAB307800BD557A;
+					};
+				};
+			};
+			buildConfigurationList = A7719D6E1FAB307800BD557A /* Build configuration list for PBXProject "Drone Safely" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7719D6A1FAB307800BD557A;
+			productRefGroup = A7719D741FAB307800BD557A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7719D721FAB307800BD557A /* Drone Safely */,
+				A7719D861FAB307800BD557A /* Drone SafelyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7719D711FAB307800BD557A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7719D811FAB307800BD557A /* LaunchScreen.storyboard in Resources */,
+				A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */,
+				A7719D7C1FAB307800BD557A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7719D851FAB307800BD557A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7719D6F1FAB307800BD557A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7719D791FAB307800BD557A /* ViewController.swift in Sources */,
+				A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7719D831FAB307800BD557A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7719D891FAB307800BD557A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7719D721FAB307800BD557A /* Drone Safely */;
+			targetProxy = A7719D881FAB307800BD557A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7719D7A1FAB307800BD557A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7719D7B1FAB307800BD557A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7719D801FAB307800BD557A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7719D8E1FAB307800BD557A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7719D8F1FAB307800BD557A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7719D911FAB307800BD557A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Drone Safely/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-Safely";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7719D921FAB307800BD557A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Drone Safely/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-Safely";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7719D941FAB307800BD557A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Drone SafelyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-SafelyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drone Safely.app/Drone Safely";
+			};
+			name = Debug;
+		};
+		A7719D951FAB307800BD557A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Drone SafelyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-SafelyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drone Safely.app/Drone Safely";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7719D6E1FAB307800BD557A /* Build configuration list for PBXProject "Drone Safely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7719D8E1FAB307800BD557A /* Debug */,
+				A7719D8F1FAB307800BD557A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7719D901FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone Safely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7719D911FAB307800BD557A /* Debug */,
+				A7719D921FAB307800BD557A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7719D931FAB307800BD557A /* Build configuration list for PBXNativeTarget "Drone SafelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7719D941FAB307800BD557A /* Debug */,
+				A7719D951FAB307800BD557A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7719D6B1FAB307800BD557A /* Project object */;
+}
