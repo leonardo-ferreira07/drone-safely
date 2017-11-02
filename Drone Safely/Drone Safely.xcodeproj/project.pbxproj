@@ -31,6 +31,7 @@
 		A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E241FAB327600BD557A /* LoadingView.swift */; };
 		A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E271FAB327600BD557A /* Reachability.swift */; };
 		A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E281FAB327600BD557A /* ParserHelper.swift */; };
+		A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		A7719E241FAB327600BD557A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A7719E271FAB327600BD557A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A7719E281FAB327600BD557A /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 		A7719E261FAB327600BD557A /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
+				A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */,
 				A7719E271FAB327600BD557A /* Reachability.swift */,
 			);
 			path = "3rd Party";
@@ -322,6 +325,7 @@
 		A7719D6B1FAB307800BD557A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Leonardo Vinicius Kaminski Ferreira";
@@ -367,6 +371,7 @@
 				A7719E2B1FAB327600BD557A /* Main.storyboard in Resources */,
 				A7719E2A1FAB327600BD557A /* LaunchScreen.storyboard in Resources */,
 				A7719E291FAB327600BD557A /* Location.storyboard in Resources */,
+				A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Drone Safely/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-Safely";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,6 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Drone Safely/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonardoFerreira.Drone-Safely";
 				PRODUCT_NAME = "$(TARGET_NAME)";
