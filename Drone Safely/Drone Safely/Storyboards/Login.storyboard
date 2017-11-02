@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="2M2-h1-cUu">
             <objects>
-                <viewController id="qzj-3k-KUP" customClass="LoginViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginController" id="qzj-3k-KUP" customClass="LoginViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kW5-0b-Vhn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

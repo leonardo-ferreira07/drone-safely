@@ -33,6 +33,7 @@
 		A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E271FAB327600BD557A /* Reachability.swift */; };
 		A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E281FAB327600BD557A /* ParserHelper.swift */; };
 		A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */; };
+		A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79F82411FAB53840055A3A5 /* LoginHelper.swift */; };
 		E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		A7719E271FAB327600BD557A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A7719E281FAB327600BD557A /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 		A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A79F82411FAB53840055A3A5 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone Safely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone SafelyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -298,6 +300,7 @@
 		A7719E251FAB327600BD557A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A79F82401FAB53740055A3A5 /* LoginHelper */,
 				A7719E261FAB327600BD557A /* 3rd Party */,
 				A7719E281FAB327600BD557A /* ParserHelper.swift */,
 			);
@@ -311,6 +314,14 @@
 				A7719E271FAB327600BD557A /* Reachability.swift */,
 			);
 			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		A79F82401FAB53740055A3A5 /* LoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A79F82411FAB53840055A3A5 /* LoginHelper.swift */,
+			);
+			path = LoginHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +554,7 @@
 				A7719E301FAB327600BD557A /* String+Validations.swift in Sources */,
 				A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */,
 				A7719E321FAB327600BD557A /* MapViewController.swift in Sources */,
+				A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

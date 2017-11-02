@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BaseOnTheMapViewController: UIViewController {
     
@@ -40,9 +41,23 @@ class BaseOnTheMapViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func deleteSessionPressed(_ sender: Any) {
-        self.view.startLoadingAnimation()
+        view.startLoadingAnimation()
         logoutButton(enabled: false)
-        
+        var hadError = false
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            hadError = true
+            print ("Error signing out: %@", signOutError)
+        }
+        if !hadError {
+            if AppDelegate.current?.window?.rootViewController is UITabBarController {
+                LoginHelper.presentLogin()
+            } else {
+                dismiss(animated: true, completion: nil)
+            }
+        }
+        view.stopLoadingAnimation()
     }
     
     @IBAction func refreshStudentsLocationsPressed(_ sender: Any) {

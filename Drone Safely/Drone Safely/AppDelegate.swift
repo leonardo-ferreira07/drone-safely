@@ -14,10 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    static var current: AppDelegate? {
+        return UIApplication.shared.delegate as? AppDelegate
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if Auth.auth().currentUser != nil {
+            LoginHelper.presentMain()
+        } else {
+            LoginHelper.presentLogin()
+        }
+
         return true
     }
 

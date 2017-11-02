@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: BaseOnTheMapViewController {
     
@@ -18,6 +19,10 @@ class LoginViewController: BaseOnTheMapViewController {
     
     
     let reachability = Reachability()!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         resignTextFields()
@@ -35,7 +40,14 @@ class LoginViewController: BaseOnTheMapViewController {
             return
         }
         if let email = emailTextField.text, let password = passwordTextField.text, email.isValidEmail(), password.count > 0 {
-            
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                self.view.stopLoadingAnimation()
+                if let error = error {
+                    print(error)
+                    return
+                }
+                self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+            }
         } else {
             self.view.stopLoadingAnimation()
             showAlert("Login Error", message: "Email or password is not in the correct format.")
