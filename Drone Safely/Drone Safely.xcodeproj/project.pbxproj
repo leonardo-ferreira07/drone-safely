@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D761FAB307800BD557A /* AppDelegate.swift */; };
-		A7719D791FAB307800BD557A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D781FAB307800BD557A /* ViewController.swift */; };
-		A7719D7C1FAB307800BD557A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7A1FAB307800BD557A /* Main.storyboard */; };
 		A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7D1FAB307800BD557A /* Assets.xcassets */; };
-		A7719D811FAB307800BD557A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */; };
 		A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */; };
+		A7719E291FAB327600BD557A /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719E031FAB327500BD557A /* Location.storyboard */; };
+		A7719E2A1FAB327600BD557A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719E041FAB327500BD557A /* LaunchScreen.storyboard */; };
+		A7719E2B1FAB327600BD557A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719E061FAB327500BD557A /* Main.storyboard */; };
+		A7719E2C1FAB327600BD557A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7719E081FAB327500BD557A /* Login.storyboard */; };
+		A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0A1FAB327500BD557A /* DesignableButton.swift */; };
+		A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0B1FAB327500BD557A /* Extensions.swift */; };
+		A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0C1FAB327500BD557A /* DesignableView.swift */; };
+		A7719E301FAB327600BD557A /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0D1FAB327500BD557A /* String+Validations.swift */; };
+		A7719E311FAB327600BD557A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E101FAB327500BD557A /* APIClient.swift */; };
+		A7719E321FAB327600BD557A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E141FAB327600BD557A /* MapViewController.swift */; };
+		A7719E331FAB327600BD557A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E161FAB327600BD557A /* ListViewController.swift */; };
+		A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E181FAB327600BD557A /* LoginViewController.swift */; };
+		A7719E351FAB327600BD557A /* BaseOnTheMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1A1FAB327600BD557A /* BaseOnTheMapViewController.swift */; };
+		A7719E361FAB327600BD557A /* AddLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1C1FAB327600BD557A /* AddLocationMapViewController.swift */; };
+		A7719E371FAB327600BD557A /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */; };
+		A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */; };
+		A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */; };
+		A7719E3A1FAB327600BD557A /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7719E231FAB327600BD557A /* LoadingView.xib */; };
+		A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E241FAB327600BD557A /* LoadingView.swift */; };
+		A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E271FAB327600BD557A /* Reachability.swift */; };
+		A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E281FAB327600BD557A /* ParserHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +46,32 @@
 /* Begin PBXFileReference section */
 		A7719D731FAB307800BD557A /* Drone Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Safely.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7719D761FAB307800BD557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7719D781FAB307800BD557A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7719D7B1FAB307800BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7719D7D1FAB307800BD557A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7719D801FAB307800BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7719D821FAB307800BD557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7719D871FAB307800BD557A /* Drone SafelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drone SafelyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drone_SafelyTests.swift; sourceTree = "<group>"; };
 		A7719D8D1FAB307800BD557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7719E031FAB327500BD557A /* Location.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		A7719E051FAB327500BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7719E071FAB327500BD557A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7719E081FAB327500BD557A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A7719E0A1FAB327500BD557A /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		A7719E0B1FAB327500BD557A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A7719E0C1FAB327500BD557A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		A7719E0D1FAB327500BD557A /* String+Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
+		A7719E101FAB327500BD557A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A7719E141FAB327600BD557A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A7719E161FAB327600BD557A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A7719E181FAB327600BD557A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7719E1A1FAB327600BD557A /* BaseOnTheMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOnTheMapViewController.swift; sourceTree = "<group>"; };
+		A7719E1C1FAB327600BD557A /* AddLocationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationMapViewController.swift; sourceTree = "<group>"; };
+		A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStudentTableViewCell.swift; sourceTree = "<group>"; };
+		A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewPresenter.swift; sourceTree = "<group>"; };
+		A7719E231FAB327600BD557A /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		A7719E241FAB327600BD557A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A7719E271FAB327600BD557A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A7719E281FAB327600BD557A /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +113,14 @@
 		A7719D751FAB307800BD557A /* Drone Safely */ = {
 			isa = PBXGroup;
 			children = (
+				A7719E0E1FAB327500BD557A /* API */,
+				A7719E121FAB327600BD557A /* Controllers */,
+				A7719E091FAB327500BD557A /* Extensions */,
+				A7719E251FAB327600BD557A /* Helpers */,
+				A7719E021FAB327500BD557A /* Storyboards */,
+				A7719E1E1FAB327600BD557A /* Views */,
 				A7719D761FAB307800BD557A /* AppDelegate.swift */,
-				A7719D781FAB307800BD557A /* ViewController.swift */,
-				A7719D7A1FAB307800BD557A /* Main.storyboard */,
 				A7719D7D1FAB307800BD557A /* Assets.xcassets */,
-				A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */,
 				A7719D821FAB307800BD557A /* Info.plist */,
 			);
 			path = "Drone Safely";
@@ -94,6 +133,149 @@
 				A7719D8D1FAB307800BD557A /* Info.plist */,
 			);
 			path = "Drone SafelyTests";
+			sourceTree = "<group>";
+		};
+		A7719E021FAB327500BD557A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E031FAB327500BD557A /* Location.storyboard */,
+				A7719E041FAB327500BD557A /* LaunchScreen.storyboard */,
+				A7719E061FAB327500BD557A /* Main.storyboard */,
+				A7719E081FAB327500BD557A /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A7719E091FAB327500BD557A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E0A1FAB327500BD557A /* DesignableButton.swift */,
+				A7719E0B1FAB327500BD557A /* Extensions.swift */,
+				A7719E0C1FAB327500BD557A /* DesignableView.swift */,
+				A7719E0D1FAB327500BD557A /* String+Validations.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7719E0E1FAB327500BD557A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E0F1FAB327500BD557A /* Clients */,
+				A7719E101FAB327500BD557A /* APIClient.swift */,
+				A7719E111FAB327500BD557A /* Constants */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A7719E0F1FAB327500BD557A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		A7719E111FAB327500BD557A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A7719E121FAB327600BD557A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E131FAB327600BD557A /* Map */,
+				A7719E151FAB327600BD557A /* List */,
+				A7719E171FAB327600BD557A /* Login */,
+				A7719E191FAB327600BD557A /* Base */,
+				A7719E1B1FAB327600BD557A /* AddLocation */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7719E131FAB327600BD557A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E141FAB327600BD557A /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A7719E151FAB327600BD557A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E161FAB327600BD557A /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A7719E171FAB327600BD557A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E181FAB327600BD557A /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A7719E191FAB327600BD557A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E1A1FAB327600BD557A /* BaseOnTheMapViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A7719E1B1FAB327600BD557A /* AddLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E1C1FAB327600BD557A /* AddLocationMapViewController.swift */,
+				A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */,
+			);
+			path = AddLocation;
+			sourceTree = "<group>";
+		};
+		A7719E1E1FAB327600BD557A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E1F1FAB327600BD557A /* Cells */,
+				A7719E211FAB327600BD557A /* Customs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7719E1F1FAB327600BD557A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7719E211FAB327600BD557A /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */,
+				A7719E231FAB327600BD557A /* LoadingView.xib */,
+				A7719E241FAB327600BD557A /* LoadingView.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		A7719E251FAB327600BD557A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E261FAB327600BD557A /* 3rd Party */,
+				A7719E281FAB327600BD557A /* ParserHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A7719E261FAB327600BD557A /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				A7719E271FAB327600BD557A /* Reachability.swift */,
+			);
+			path = "3rd Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +361,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7719D811FAB307800BD557A /* LaunchScreen.storyboard in Resources */,
+				A7719E3A1FAB327600BD557A /* LoadingView.xib in Resources */,
 				A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */,
-				A7719D7C1FAB307800BD557A /* Main.storyboard in Resources */,
+				A7719E2C1FAB327600BD557A /* Login.storyboard in Resources */,
+				A7719E2B1FAB327600BD557A /* Main.storyboard in Resources */,
+				A7719E2A1FAB327600BD557A /* LaunchScreen.storyboard in Resources */,
+				A7719E291FAB327600BD557A /* Location.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +384,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7719D791FAB307800BD557A /* ViewController.swift in Sources */,
+				A7719E351FAB327600BD557A /* BaseOnTheMapViewController.swift in Sources */,
+				A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */,
+				A7719E311FAB327600BD557A /* APIClient.swift in Sources */,
+				A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */,
+				A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */,
+				A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */,
+				A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */,
 				A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */,
+				A7719E361FAB327600BD557A /* AddLocationMapViewController.swift in Sources */,
+				A7719E371FAB327600BD557A /* AddLocationViewController.swift in Sources */,
+				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
+				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
+				A7719E331FAB327600BD557A /* ListViewController.swift in Sources */,
+				A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */,
+				A7719E301FAB327600BD557A /* String+Validations.swift in Sources */,
+				A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */,
+				A7719E321FAB327600BD557A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +423,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7719D7A1FAB307800BD557A /* Main.storyboard */ = {
+		A7719E041FAB327500BD557A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7719D7B1FAB307800BD557A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A7719D7F1FAB307800BD557A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7719D801FAB307800BD557A /* Base */,
+				A7719E051FAB327500BD557A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A7719E061FAB327500BD557A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7719E071FAB327500BD557A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

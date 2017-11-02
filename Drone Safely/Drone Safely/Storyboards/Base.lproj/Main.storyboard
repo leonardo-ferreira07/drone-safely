@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9RK-FR-BUA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="W9s-U7-HfO">
+            <objects>
+                <navigationController id="Tcn-oy-uaZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_listview-deselected" selectedImage="icon_listview-selected" id="oH2-1i-PY1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="91W-wg-o1e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bBX-lm-5Nf" kind="relationship" relationship="rootViewController" id="GFH-PQ-gAF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMi-uw-VfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="708"/>
+        </scene>
+        <!--Drone Safely-->
+        <scene sceneID="AFE-Ob-P0V">
+            <objects>
+                <viewController id="bBX-lm-5Nf" customClass="ListViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6q-87-RSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-n7-dF4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listStudentTableViewCell" rowHeight="70" id="ZPp-qM-tq9" customClass="ListStudentTableViewCell" customModule="Drone_Safely" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZPp-qM-tq9" id="wak-XQ-fp3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u6S-Ce-pmE">
+                                                    <rect key="frame" x="75" y="8" width="292" height="53.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMi-2K-oZV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bA7-rW-a0p">
+                                                            <rect key="frame" x="0.0" y="31" width="42" height="22.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="Q0O-xm-Q6I">
+                                                    <rect key="frame" x="20" y="17.5" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="a1Y-dy-usF"/>
+                                                        <constraint firstAttribute="height" constant="35" id="dkh-7u-gLg"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q0O-xm-Q6I" firstAttribute="leading" secondItem="wak-XQ-fp3" secondAttribute="leading" constant="20" id="0az-PN-xeR"/>
+                                                <constraint firstAttribute="trailing" secondItem="u6S-Ce-pmE" secondAttribute="trailing" constant="8" id="Bm3-zO-UO6"/>
+                                                <constraint firstAttribute="bottom" secondItem="u6S-Ce-pmE" secondAttribute="bottom" constant="8" id="Z7W-YH-dhf"/>
+                                                <constraint firstItem="u6S-Ce-pmE" firstAttribute="top" secondItem="wak-XQ-fp3" secondAttribute="top" constant="8" id="jfZ-q7-dJf"/>
+                                                <constraint firstItem="u6S-Ce-pmE" firstAttribute="leading" secondItem="Q0O-xm-Q6I" secondAttribute="trailing" constant="20" id="mh0-nx-ilc"/>
+                                                <constraint firstItem="Q0O-xm-Q6I" firstAttribute="centerY" secondItem="wak-XQ-fp3" secondAttribute="centerY" id="wNa-di-8FQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="studentMediaLink" destination="bA7-rW-a0p" id="xYt-VN-Cjw"/>
+                                            <outlet property="studentName" destination="rMi-2K-oZV" id="79c-n4-Gsh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bBX-lm-5Nf" id="I0h-6C-bbM"/>
+                                    <outlet property="delegate" destination="bBX-lm-5Nf" id="ACy-d5-KHE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E4I-ZI-5Et" firstAttribute="bottom" secondItem="4aH-n7-dF4" secondAttribute="bottom" id="2eg-FI-ow4"/>
+                            <constraint firstItem="4aH-n7-dF4" firstAttribute="leading" secondItem="E4I-ZI-5Et" secondAttribute="leading" id="79f-7R-jkH"/>
+                            <constraint firstItem="4aH-n7-dF4" firstAttribute="top" secondItem="E4I-ZI-5Et" secondAttribute="top" id="hCg-Em-8v5"/>
+                            <constraint firstItem="E4I-ZI-5Et" firstAttribute="trailing" secondItem="4aH-n7-dF4" secondAttribute="trailing" id="kzH-6H-qvc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E4I-ZI-5Et"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="NX5-OL-R6C"/>
+                    <navigationItem key="navigationItem" title="Drone Safely" id="aZ3-FU-qLr">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="hox-dK-JbU">
+                            <connections>
+                                <action selector="deleteSessionPressed:" destination="bBX-lm-5Nf" id="b3G-oC-iuO"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="cYt-QU-T89">
+                                <connections>
+                                    <action selector="addStudentLocationPressed:" destination="bBX-lm-5Nf" id="V5V-rY-ldZ"/>
+                                    <segue destination="JBm-Sj-1bK" kind="show" id="Zz5-k2-lDb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="3ie-JU-Igm">
+                                <connections>
+                                    <action selector="refreshStudentsLocationsPressed:" destination="bBX-lm-5Nf" id="uSE-gj-9Kn"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="cYt-QU-T89" id="Hfl-R1-Qee"/>
+                        <outlet property="logoutButton" destination="hox-dK-JbU" id="Kfi-YD-yhT"/>
+                        <outlet property="refreshButton" destination="3ie-JU-Igm" id="sSX-nI-X7C"/>
+                        <outlet property="tableView" destination="4aH-n7-dF4" id="IPX-Bk-dHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0l-5t-sCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="706.59670164917543"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2ef-37-9cb">
+            <objects>
+                <tabBarController id="9RK-FR-BUA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJD-vb-iQT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bqd-Ma-BOS" kind="relationship" relationship="viewControllers" id="f2u-y0-hKD"/>
+                        <segue destination="Tcn-oy-uaZ" kind="relationship" relationship="viewControllers" id="nRW-nL-nQ4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Pg-Re-eNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-831" y="419"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rA0-U4-Kbu">
+            <objects>
+                <navigationController id="bqd-Ma-BOS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_mapview-deselected" selectedImage="icon_mapview-selected" id="hcJ-mX-gD0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qgr-z1-vu6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wfm-st-ON4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBI-cu-9vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-155"/>
+        </scene>
+        <!--Drone Safely-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y1U-AH-LU5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AG0-sw-vIb"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y1U-AH-LU5" firstAttribute="trailing" secondItem="3PG-lH-ViG" secondAttribute="trailing" id="Hhb-Xh-ogf"/>
+                            <constraint firstItem="y1U-AH-LU5" firstAttribute="bottom" secondItem="3PG-lH-ViG" secondAttribute="bottom" id="cmy-wh-50k"/>
+                            <constraint firstItem="y1U-AH-LU5" firstAttribute="top" secondItem="3PG-lH-ViG" secondAttribute="top" id="n97-0o-bvO"/>
+                            <constraint firstItem="y1U-AH-LU5" firstAttribute="leading" secondItem="3PG-lH-ViG" secondAttribute="leading" id="nSi-jB-jFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3PG-lH-ViG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SKG-Bs-BsH"/>
+                    <navigationItem key="navigationItem" title="Drone Safely" id="KJM-zv-0mi">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Rwe-bV-z47">
+                            <connections>
+                                <action selector="deleteSessionPressed:" destination="BYZ-38-t0r" id="HTp-fV-EFV"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="JI6-ak-8rR">
+                                <connections>
+                                    <action selector="addStudentLocationPressed:" destination="BYZ-38-t0r" id="yWA-vq-vIG"/>
+                                    <segue destination="JBm-Sj-1bK" kind="show" id="27e-fO-pQN"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="h66-FM-1Ge">
+                                <connections>
+                                    <action selector="refreshStudentsLocationsPressed:" destination="BYZ-38-t0r" id="j3u-QL-TLN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="JI6-ak-8rR" id="itR-Xk-uTT"/>
+                        <outlet property="logoutButton" destination="Rwe-bV-z47" id="Osu-7r-rGx"/>
+                        <outlet property="mapView" destination="y1U-AH-LU5" id="WhM-ne-Vmp"/>
+                        <outlet property="refreshButton" destination="h66-FM-1Ge" id="n9y-SB-LNP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-155"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="fAz-G2-kQS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Location" id="JBm-Sj-1bK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SS9-lW-eSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_listview-deselected" width="75" height="50"/>
+        <image name="icon_listview-selected" width="75" height="50"/>
+        <image name="icon_mapview-deselected" width="75" height="50"/>
+        <image name="icon_mapview-selected" width="75" height="50"/>
+        <image name="icon_pin" width="24" height="24"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="27e-fO-pQN"/>
+    </inferredMetricsTieBreakers>
+</document>

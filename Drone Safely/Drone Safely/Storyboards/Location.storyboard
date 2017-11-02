@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lFk-Jv-UjS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CE4-IN-zRt">
+            <objects>
+                <navigationController id="lFk-Jv-UjS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oqR-dF-ahu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4ao-e2-0If" kind="relationship" relationship="rootViewController" id="DIZ-Pr-NpB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rp-cv-Dib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="101"/>
+        </scene>
+        <!--Add Location-->
+        <scene sceneID="5bY-xn-Wso">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="4ao-e2-0If" customClass="AddLocationViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K7Y-Ho-go9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_world" translatesAutoresizingMaskIntoConstraints="NO" id="ef0-tB-ch8">
+                                <rect key="frame" x="161" y="94" width="52" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="cPW-cM-MgH"/>
+                                    <constraint firstAttribute="width" constant="52" id="zyq-XZ-fex"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="get-PE-K3x">
+                                <rect key="frame" x="40" y="181" width="295" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put Your Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IbC-KY-HiW">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6tt-Q2-nIY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Share your link here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lru-b9-GVg">
+                                        <rect key="frame" x="0.0" y="60" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WBp-cX-KaO"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" smartInsertDeleteType="no" textContentType="url"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-5Q-eUu" customClass="DesignableButton" customModule="OnTheMap" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="295" height="50"/>
+                                        <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="N9k-Ap-yXP"/>
+                                        </constraints>
+                                        <state key="normal" title="FIND LOCATION">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="findLocationPressed:" destination="4ao-e2-0If" eventType="touchUpInside" id="EV9-Wg-XHa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="BwQ-C8-j87"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ef0-tB-ch8" firstAttribute="centerX" secondItem="Wrr-Vx-p71" secondAttribute="centerX" id="W6u-d4-9Yh"/>
+                            <constraint firstItem="get-PE-K3x" firstAttribute="top" secondItem="ef0-tB-ch8" secondAttribute="bottom" constant="20" id="Y8W-6g-DI0"/>
+                            <constraint firstItem="get-PE-K3x" firstAttribute="leading" secondItem="Wrr-Vx-p71" secondAttribute="leading" constant="40" id="Zfr-ej-FGw"/>
+                            <constraint firstItem="ef0-tB-ch8" firstAttribute="top" secondItem="Wrr-Vx-p71" secondAttribute="top" constant="30" id="bD2-Ky-KG0"/>
+                            <constraint firstItem="Wrr-Vx-p71" firstAttribute="trailing" secondItem="get-PE-K3x" secondAttribute="trailing" constant="40" id="hXl-5q-yoS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wrr-Vx-p71"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Location" id="4x4-ag-EIr">
+                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="EdX-ly-mvd">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="4ao-e2-0If" id="4aP-YZ-LYn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="linkTextField" destination="Lru-b9-GVg" id="cDv-th-WYk"/>
+                        <outlet property="locationTextField" destination="IbC-KY-HiW" id="Vgw-SG-hpG"/>
+                        <outlet property="stackView" destination="get-PE-K3x" id="F5S-my-ldO"/>
+                        <outlet property="topIconConstraint" destination="bD2-Ky-KG0" id="way-5h-VIq"/>
+                        <segue destination="CuH-fs-F5D" kind="show" identifier="showPostLocation" id="pCz-LK-shE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXG-6H-f6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="99"/>
+        </scene>
+        <!--Post Location-->
+        <scene sceneID="yhP-gf-pMS">
+            <objects>
+                <viewController title="Post Location" id="CuH-fs-F5D" customClass="AddLocationMapViewController" customModule="OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAD-0K-Ceh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ODA-9g-4Wd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-4o-ocr" customClass="DesignableButton" customModule="OnTheMap" customModuleProvider="target">
+                                <rect key="frame" x="40" y="597" width="295" height="50"/>
+                                <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TUO-ZX-lFN"/>
+                                </constraints>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postLocationPressed:" destination="CuH-fs-F5D" eventType="touchUpInside" id="Hbg-T4-mYT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ODA-9g-4Wd" firstAttribute="bottom" secondItem="ktl-n5-Tsq" secondAttribute="bottom" id="0oU-tC-2ON"/>
+                            <constraint firstItem="ktl-n5-Tsq" firstAttribute="trailing" secondItem="wF3-4o-ocr" secondAttribute="trailing" constant="40" id="1sZ-no-Odf"/>
+                            <constraint firstItem="wF3-4o-ocr" firstAttribute="leading" secondItem="ktl-n5-Tsq" secondAttribute="leading" constant="40" id="As1-dH-5ek"/>
+                            <constraint firstItem="ODA-9g-4Wd" firstAttribute="leading" secondItem="ktl-n5-Tsq" secondAttribute="leading" id="D0a-a0-dwU"/>
+                            <constraint firstItem="ODA-9g-4Wd" firstAttribute="top" secondItem="ktl-n5-Tsq" secondAttribute="top" id="WeP-Rc-UYz"/>
+                            <constraint firstItem="ODA-9g-4Wd" firstAttribute="trailing" secondItem="ktl-n5-Tsq" secondAttribute="trailing" id="tcz-0n-JYR"/>
+                            <constraint firstItem="ktl-n5-Tsq" firstAttribute="bottom" secondItem="wF3-4o-ocr" secondAttribute="bottom" constant="20" id="xWn-h0-8R6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ktl-n5-Tsq"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ODA-9g-4Wd" id="GvZ-2S-cMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04e-7g-eqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_world" width="52" height="67"/>
+    </resources>
+</document>
