@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class BaseOnTheMapViewController: UIViewController {
+class BaseDroneSafelyViewController: UIViewController {
     
     @IBOutlet weak var logoutButton: UIBarButtonItem!
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -25,6 +25,8 @@ class BaseOnTheMapViewController: UIViewController {
         super.viewWillAppear(animated)
         
         subscribeToKeyboardNotifications()
+        
+        verifyLoggedUserUI()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,7 +82,7 @@ class BaseOnTheMapViewController: UIViewController {
 
 // MARK: - UI Controls
 
-extension BaseOnTheMapViewController {
+extension BaseDroneSafelyViewController {
     func logoutButton(enabled: Bool) {
         logoutButton.isEnabled = enabled
     }
@@ -88,11 +90,21 @@ extension BaseOnTheMapViewController {
     func refreshButton(enabled: Bool) {
         refreshButton.isEnabled = enabled
     }
+    
+    func verifyLoggedUserUI() {
+        if logoutButton != nil {
+            if Auth.auth().currentUser == nil {
+                logoutButton(enabled: false)
+            } else {
+                logoutButton(enabled: true)
+            }
+        }
+    }
 }
 
 // MARK: - Keyboard notifications
 
-extension BaseOnTheMapViewController {
+extension BaseDroneSafelyViewController {
     
     func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)

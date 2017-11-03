@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: BaseOnTheMapViewController {
+class MapViewController: BaseDroneSafelyViewController {
     
     enum PinIdentifier: String {
         case pin

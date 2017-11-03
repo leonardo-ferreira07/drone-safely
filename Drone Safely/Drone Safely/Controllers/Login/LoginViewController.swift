@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: BaseOnTheMapViewController {
+class LoginViewController: BaseDroneSafelyViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

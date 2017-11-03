@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class AddLocationViewController: BaseOnTheMapViewController {
+class AddLocationViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!

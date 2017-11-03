@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewController: BaseOnTheMapViewController {
+class ListViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
