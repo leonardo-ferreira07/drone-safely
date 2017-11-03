@@ -12,7 +12,7 @@ struct LoginHelper {
     
     static func presentLogin() {
         let loginStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
-        let viewController: LoginViewController = loginStoryboard.instantiateViewController(withIdentifier: "loginController") as! LoginViewController
+        let viewController: UINavigationController = loginStoryboard.instantiateViewController(withIdentifier: "loginController") as! UINavigationController
         
         AppDelegate.current?.window?.rootViewController = viewController
         

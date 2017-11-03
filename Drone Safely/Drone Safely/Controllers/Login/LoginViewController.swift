@@ -20,8 +20,10 @@ class LoginViewController: BaseDroneSafelyViewController {
     
     let reachability = Reachability()!
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -52,10 +54,6 @@ class LoginViewController: BaseDroneSafelyViewController {
             self.view.stopLoadingAnimation()
             showAlert("Login Error", message: "Email or password is not in the correct format.")
         }
-    }
-    
-    @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        presentWebPageInSafari(withURLString: "")
     }
     
     @IBAction func skipButtonPressed(_ sender: UIButton) {
