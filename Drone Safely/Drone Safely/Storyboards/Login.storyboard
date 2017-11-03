@@ -20,14 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="hIA-S3-bee">
-                                <rect key="frame" x="156.66666666666666" y="64" width="62" height="62"/>
+                                <rect key="frame" x="156.66666666666666" y="108" width="62" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="QXp-og-xur"/>
                                     <constraint firstAttribute="width" constant="62" id="jPE-R5-GWV"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="coD-Eb-Aom">
-                                <rect key="frame" x="40" y="151" width="295" height="170"/>
+                                <rect key="frame" x="40" y="195" width="295" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QbG-qF-qFp">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -68,7 +68,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QDi-Wz-eWM">
-                                <rect key="frame" x="40" y="341" width="295" height="68"/>
+                                <rect key="frame" x="40" y="385" width="295" height="68"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcT-da-cw4">
                                         <rect key="frame" x="38.666666666666686" y="0.0" width="218" height="30"/>
@@ -140,8 +140,9 @@
         <!--Navigation Controller-->
         <scene sceneID="lqI-lS-Zyf">
             <objects>
-                <navigationController storyboardIdentifier="loginController" navigationBarHidden="YES" id="C4v-tD-gfm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginController" id="C4v-tD-gfm" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mRT-mq-ojF">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -161,7 +162,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wvq-U8-TKZ">
-                                <rect key="frame" x="40" y="64" width="295" height="230"/>
+                                <rect key="frame" x="40" y="108" width="295" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqz-C2-zEb">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -190,24 +191,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjC-Ff-1CX" customClass="DesignableButton" customModule="Drone_Safely" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="180" width="295" height="50"/>
-                                        <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="oLp-bK-4eT"/>
-                                        </constraints>
-                                        <state key="normal" title="SIGN UP">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="loginButtonPressed:" destination="qzj-3k-KUP" eventType="touchUpInside" id="RR2-5O-HK7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -219,7 +202,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CXv-dq-Wzz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign Up" id="a3o-40-25c"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="a3o-40-25c">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Up" id="sxx-2V-1ny">
+                            <connections>
+                                <action selector="signUpButtonPressed:" destination="irI-XP-iHz" id="oAm-Uq-wtj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="cw9-YA-qep" id="geT-zI-lQ0"/>
+                        <outlet property="nameTextField" destination="Lqz-C2-zEb" id="n6q-re-U0e"/>
+                        <outlet property="passwordTextField" destination="mza-tV-vkU" id="3HI-6Z-teK"/>
+                        <outlet property="signUpButton" destination="sxx-2V-1ny" id="35o-dZ-mXK"/>
+                        <segue destination="aKF-An-v6E" kind="presentation" identifier="goMainStoryboard" id="ifZ-uo-sDU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLX-iQ-unS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,6 +234,7 @@
         <image name="logo-u" width="62" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ifZ-uo-sDU"/>
         <segue reference="vP6-73-Ih7"/>
     </inferredMetricsTieBreakers>
 </document>
