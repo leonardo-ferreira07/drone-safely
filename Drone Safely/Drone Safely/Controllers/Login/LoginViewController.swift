@@ -58,6 +58,10 @@ class LoginViewController: BaseOnTheMapViewController {
         presentWebPageInSafari(withURLString: "")
     }
     
+    @IBAction func skipButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+    }
+    
     override func keyboardWillShow(_ notification: Notification) {
         self.topLogoConstraint.constant = -82
         self.stackView.spacing = 4

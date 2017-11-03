@@ -66,11 +66,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QDi-Wz-eWM">
-                                <rect key="frame" x="40" y="341" width="295" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QDi-Wz-eWM">
+                                <rect key="frame" x="40" y="341" width="295" height="68"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcT-da-cw4">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                                        <rect key="frame" x="38.666666666666686" y="0.0" width="218" height="30"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Don't have an account?">
@@ -95,6 +95,13 @@
                                         </state>
                                         <connections>
                                             <action selector="signUpButtonPressed:" destination="qzj-3k-KUP" eventType="touchUpInside" id="bUl-87-ryg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-m0-88H">
+                                        <rect key="frame" x="111.66666666666666" y="38" width="72" height="30"/>
+                                        <state key="normal" title="Skip Login"/>
+                                        <connections>
+                                            <action selector="skipButtonPressed:" destination="qzj-3k-KUP" eventType="touchUpInside" id="53k-Ly-tz0"/>
                                         </connections>
                                     </button>
                                 </subviews>
