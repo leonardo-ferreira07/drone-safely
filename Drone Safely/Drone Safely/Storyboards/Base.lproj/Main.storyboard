@@ -11,11 +11,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Safe places-->
         <scene sceneID="W9s-U7-HfO">
             <objects>
                 <navigationController id="Tcn-oy-uaZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_listview-deselected" selectedImage="icon_listview-selected" id="oH2-1i-PY1"/>
+                    <tabBarItem key="tabBarItem" title="Safe places" image="icon_listview-deselected" selectedImage="icon_listview-selected" id="oH2-1i-PY1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="91W-wg-o1e">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listStudentTableViewCell" rowHeight="70" id="ZPp-qM-tq9" customClass="ListStudentTableViewCell" customModule="Drone_Safely" customModuleProvider="target">
+                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listLocationsTableViewCell" rowHeight="70" id="ZPp-qM-tq9" customClass="ListStudentTableViewCell" customModule="Drone_Safely" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZPp-qM-tq9" id="wak-XQ-fp3">
@@ -152,11 +152,11 @@
             </objects>
             <point key="canvasLocation" x="-831" y="419"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Safe places map-->
         <scene sceneID="rA0-U4-Kbu">
             <objects>
                 <navigationController id="bqd-Ma-BOS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_mapview-deselected" selectedImage="icon_mapview-selected" id="hcJ-mX-gD0"/>
+                    <tabBarItem key="tabBarItem" title="Safe places map" image="icon_mapview-deselected" selectedImage="icon_mapview-selected" id="hcJ-mX-gD0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qgr-z1-vu6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -242,6 +242,6 @@
         <image name="icon_pin" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="27e-fO-pQN"/>
+        <segue reference="Zz5-k2-lDb"/>
     </inferredMetricsTieBreakers>
 </document>
