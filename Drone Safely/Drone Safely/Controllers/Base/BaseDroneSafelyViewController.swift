@@ -93,7 +93,7 @@ extension BaseDroneSafelyViewController {
     
     func verifyLoggedUserUI() {
         if logoutButton != nil {
-            if Auth.auth().currentUser == nil {
+            if LoginHelper.userIsNotLoggedIn {
                 logoutButton(enabled: false)
             } else {
                 logoutButton(enabled: true)

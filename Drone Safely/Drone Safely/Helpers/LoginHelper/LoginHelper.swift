@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 struct LoginHelper {
+    
+    static var userIsNotLoggedIn: Bool {
+        return Auth.auth().currentUser == nil
+    }
     
     static func presentLogin(fromMap: Bool = false, mapViewController: UIViewController? = nil) {
         let loginStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
