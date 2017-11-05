@@ -56,6 +56,9 @@ extension MapViewController {
     func addLocationsToMap(_ locations: [Location]) {
         
         var annotations = [MKPointAnnotation]()
+        if !locations.isEmpty {
+            self.mapView.removeAnnotations(self.mapView.annotations)
+        }
         
         for location in locations {
             
@@ -81,6 +84,7 @@ extension MapViewController {
         refreshButton(enabled: false)
         
         LocationsClient.getLocations { (locations) in
+            self.refreshButton(enabled: true)
             self.addLocationsToMap(locations)
         }
     }
