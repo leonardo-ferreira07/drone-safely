@@ -26,9 +26,9 @@ extension UIViewController: SFSafariViewControllerDelegate {
         }
     }
     
-    func showAlert(_ title: String, message: String) {
+    func showAlert(_ title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: handler))
         present(alert, animated: true, completion: nil)
     }
     

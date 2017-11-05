@@ -10,13 +10,20 @@ import UIKit
 
 struct LoginHelper {
     
-    static func presentLogin() {
+    static func presentLogin(fromMap: Bool = false, mapViewController: UIViewController? = nil) {
         let loginStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
         let viewController: UINavigationController = loginStoryboard.instantiateViewController(withIdentifier: "loginController") as! UINavigationController
+        if fromMap {
+            if let login = viewController.viewControllers.first as? LoginViewController {
+                login.fromMap = true
+            }
+            mapViewController?.show(viewController, sender: nil)
+        } else {
         
-        AppDelegate.current?.window?.rootViewController = viewController
+            AppDelegate.current?.window?.rootViewController = viewController
         
-        AppDelegate.current?.window?.makeKeyAndVisible()
+            AppDelegate.current?.window?.makeKeyAndVisible()
+        }
     }
     
     static func presentMain() {

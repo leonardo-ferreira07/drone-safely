@@ -13,12 +13,23 @@ class LoginViewController: BaseDroneSafelyViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
     
     @IBOutlet weak var topLogoConstraint: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
     
     
     let reachability = Reachability()!
+    var fromMap: Bool = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if fromMap {
+            skipButton.setTitle("Not now", for: .normal)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,6 +39,12 @@ class LoginViewController: BaseDroneSafelyViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         resignTextFields()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let signup = segue.destination as? SignupViewController {
+            signup.fromMap = fromMap
+        }
     }
 
     // MARK: - Actions
@@ -48,7 +65,11 @@ class LoginViewController: BaseDroneSafelyViewController {
                     self.showAlert("Login Error", message: error.localizedDescription)
                     return
                 }
-                self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+                if self.fromMap {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+                }
             }
         } else {
             self.view.stopLoadingAnimation()
@@ -57,7 +78,11 @@ class LoginViewController: BaseDroneSafelyViewController {
     }
     
     @IBAction func skipButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+        if fromMap {
+            dismiss(animated: true, completion: nil)
+        } else {
+            self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+        }
     }
     
     override func keyboardWillShow(_ notification: Notification) {

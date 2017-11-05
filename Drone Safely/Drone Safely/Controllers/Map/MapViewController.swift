@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseAuth
 
 class MapViewController: BaseDroneSafelyViewController {
     
@@ -143,6 +144,11 @@ extension MapViewController {
     @objc func triggerLongpressOn(_ gestureRecognizer: UIGestureRecognizer) {
         
         if canAddPin {
+            if Auth.auth().currentUser == nil {
+                showAlert("Needs user logged", message: "Posting a location needs you to be logged in! 😄", handler: { (action) in
+                    LoginHelper.presentLogin(fromMap: true, mapViewController: self)
+                })
+            }
             let touchPoint = gestureRecognizer.location(in: mapView)
             let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
             let annotation = MKPointAnnotation()

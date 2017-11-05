@@ -128,6 +128,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="QbG-qF-qFp" id="ZyB-M2-xk5"/>
                         <outlet property="passwordTextField" destination="ASJ-7V-YLt" id="Ll2-qr-0Hr"/>
+                        <outlet property="signUpButton" destination="XcT-da-cw4" id="3J6-86-Iug"/>
+                        <outlet property="skipButton" destination="HMG-m0-88H" id="1vd-RP-AEz"/>
                         <outlet property="stackView" destination="coD-Eb-Aom" id="Sm3-Wf-dzL"/>
                         <outlet property="topLogoConstraint" destination="IsF-dA-IiO" id="eRn-Ye-tGW"/>
                         <segue destination="aKF-An-v6E" kind="presentation" identifier="goMainStoryboard" id="nNa-Kn-qoy"/>
@@ -234,7 +236,7 @@
         <image name="logo-u" width="62" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ifZ-uo-sDU"/>
+        <segue reference="nNa-Kn-qoy"/>
         <segue reference="vP6-73-Ih7"/>
     </inferredMetricsTieBreakers>
 </document>

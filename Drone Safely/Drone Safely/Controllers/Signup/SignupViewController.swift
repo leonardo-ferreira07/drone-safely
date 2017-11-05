@@ -17,6 +17,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIBarButtonItem!
     
     let reachability = Reachability()!
+    var fromMap: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,8 +61,11 @@ class SignupViewController: UIViewController {
                         print(error)
                         return
                     }
-                    
-                    self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+                    if self.fromMap {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
+                    }
                 }
             }
         } else {
