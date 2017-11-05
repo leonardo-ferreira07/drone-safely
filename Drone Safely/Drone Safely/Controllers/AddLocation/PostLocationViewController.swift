@@ -18,7 +18,6 @@ class PostLocationViewController: BaseDroneSafelyViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     var coordinate: CLLocationCoordinate2D?
-    var ref: DatabaseReference!
     
     lazy var geocoder = CLGeocoder()
     
@@ -26,7 +25,6 @@ class PostLocationViewController: BaseDroneSafelyViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        ref = Database.database().reference()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -76,12 +74,12 @@ extension PostLocationViewController {
                                 locationDescription: locationDescription,
                                 latitude: coordinate?.latitude ?? 0,
                                 longitude: coordinate?.longitude ?? 0)
-        ref.child("locations").childByAutoId().setValue(location.toDictionary())
+        DataHelper.shared.databaseRef.child("locations").childByAutoId().setValue(location.toDictionary())
         view.stopLoadingAnimation()
         dismiss(animated: true, completion: nil)
         
-        let recentPostsQuery = ref.child("locations").queryLimited(toFirst: 100)
-        recentPostsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
+        let recentLocationsQuery = DataHelper.shared.databaseRef.child("locations").queryLimited(toFirst: 100)
+        recentLocationsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
             for snap in snapshot.children {
                 print((snap as! DataSnapshot).value)
             }

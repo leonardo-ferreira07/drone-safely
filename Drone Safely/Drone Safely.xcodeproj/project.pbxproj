@@ -37,6 +37,7 @@
 		A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79F82411FAB53840055A3A5 /* LoginHelper.swift */; };
 		A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA02B01FAC77160044544A /* SignupViewController.swift */; };
 		A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EC1FAF19C2005ECF52 /* Location.swift */; };
+		A7D6A1F01FAF1BA9005ECF52 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */; };
 		E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		A79F82411FAB53840055A3A5 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		A7AA02B01FAC77160044544A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A7D6A1EC1FAF19C2005ECF52 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone Safely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone SafelyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -308,6 +310,7 @@
 		A7719E251FAB327600BD557A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A7D6A1EE1FAF1B97005ECF52 /* DataHelper */,
 				A771A8861FAED19700C5FA28 /* Location */,
 				A79F82401FAB53740055A3A5 /* LoginHelper */,
 				A7719E261FAB327600BD557A /* 3rd Party */,
@@ -355,6 +358,14 @@
 				A7D6A1EC1FAF19C2005ECF52 /* Location.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A7D6A1EE1FAF1B97005ECF52 /* DataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */,
+			);
+			path = DataHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +588,7 @@
 				A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */,
 				A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */,
 				A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */,
+				A7D6A1F01FAF1BA9005ECF52 /* DataHelper.swift in Sources */,
 				A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */,
 				A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */,
 				A7719E361FAB327600BD557A /* ConfirmLocationMapViewController.swift in Sources */,
