@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lFk-Jv-UjS">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,21 +27,21 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="4ao-e2-0If" customClass="AddLocationViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7Y-Ho-go9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_world" translatesAutoresizingMaskIntoConstraints="NO" id="ef0-tB-ch8">
-                                <rect key="frame" x="161" y="94" width="52" height="67"/>
+                                <rect key="frame" x="274" y="94" width="52" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="cPW-cM-MgH"/>
                                     <constraint firstAttribute="width" constant="52" id="zyq-XZ-fex"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="get-PE-K3x">
-                                <rect key="frame" x="40" y="181" width="295" height="170"/>
+                                <rect key="frame" x="40" y="181" width="520" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put Your Location Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IbC-KY-HiW">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="6tt-Q2-nIY"/>
                                         </constraints>
@@ -54,7 +50,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Share a description (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lru-b9-GVg">
-                                        <rect key="frame" x="0.0" y="60" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="520" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="WBp-cX-KaO"/>
                                         </constraints>
@@ -63,7 +59,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" smartInsertDeleteType="no" textContentType="url"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-5Q-eUu" customClass="DesignableButton" customModule="Drone_Safely" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="520" height="50"/>
                                         <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="N9k-Ap-yXP"/>
@@ -117,19 +113,19 @@
         <!--Post Location-->
         <scene sceneID="yhP-gf-pMS">
             <objects>
-                <viewController title="Post Location" id="CuH-fs-F5D" customClass="AddLocationMapViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Post Location" id="CuH-fs-F5D" customClass="ConfirmLocationMapViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAD-0K-Ceh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODA-9g-4Wd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <connections>
                                     <outlet property="delegate" destination="CuH-fs-F5D" id="PrB-qO-RnJ"/>
                                 </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-4o-ocr" customClass="DesignableButton" customModule="Drone_Safely" customModuleProvider="target">
-                                <rect key="frame" x="40" y="553" width="295" height="50"/>
+                                <rect key="frame" x="40" y="486" width="520" height="50"/>
                                 <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="TUO-ZX-lFN"/>

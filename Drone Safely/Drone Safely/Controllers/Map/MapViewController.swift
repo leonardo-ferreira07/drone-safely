@@ -35,7 +35,7 @@ class MapViewController: BaseDroneSafelyViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let coordinate = sender as? CLLocationCoordinate2D {
             if let viewController = segue.destination as? UINavigationController {
-                if let addMapViewController = viewController.viewControllers.first as? AddLocationMapViewController {
+                if let addMapViewController = viewController.viewControllers.first as? ConfirmLocationMapViewController {
                     addMapViewController.coordinate = coordinate
                 }
             }

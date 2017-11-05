@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class AddLocationMapViewController: UIViewController {
+class ConfirmLocationMapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -42,7 +42,7 @@ class AddLocationMapViewController: UIViewController {
 
 // MARK: - Map Settings
 
-extension AddLocationMapViewController {
+extension ConfirmLocationMapViewController {
     func setMapLocation() {
         if let coordinate = coordinate {
             let latitude = coordinate.latitude
