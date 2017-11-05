@@ -22,7 +22,7 @@ class MapViewController: BaseDroneSafelyViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        refreshStudentsLocations()
+        refreshLocations()
         locationManager = LocationManagerHelper.init(self)
         addGesture()
     }
@@ -45,7 +45,7 @@ class MapViewController: BaseDroneSafelyViewController {
     // MARK: - Actions
     
     override func refreshStudentsLocationsPressed(_ sender: Any) {
-        refreshStudentsLocations()
+        refreshLocations()
     }
 
 }
@@ -53,33 +53,36 @@ class MapViewController: BaseDroneSafelyViewController {
 // MARK: - Map adding locations
 
 extension MapViewController {
-    func addLocationsToMap() {
+    func addLocationsToMap(_ locations: [Location]) {
         
         var annotations = [MKPointAnnotation]()
         
-//        for studentLocation in locations {
-//            
-//            let lat = CLLocationDegrees(studentLocation.latitude)
-//            let long = CLLocationDegrees(studentLocation.longitude)
-//            
-//            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-//            
-//            let annotation = MKPointAnnotation()
-//            annotation.coordinate = coordinate
-//            annotation.title = "\(studentLocation.firstName) \(studentLocation.lastName)"
-//            annotation.subtitle = studentLocation.mediaURL
-//            
-//            annotations.append(annotation)
-//        }
+        for location in locations {
+            
+            let lat = CLLocationDegrees(location.latitude)
+            let long = CLLocationDegrees(location.longitude)
+            
+            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            annotation.title = location.locationName
+            annotation.subtitle = location.locationDescription
+            
+            annotations.append(annotation)
+        }
         
         self.mapView.addAnnotations(annotations)
     }
 }
 
 extension MapViewController {
-    func refreshStudentsLocations () {
+    func refreshLocations () {
         refreshButton(enabled: false)
         
+        LocationsClient.getLocations { (locations) in
+            self.addLocationsToMap(locations)
+        }
     }
 }
 

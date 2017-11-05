@@ -12,7 +12,7 @@ import Foundation
 
 struct ParserHelper {
     
-    static func getString(from object: AnyObject?) -> String {
+    static func getString(from object: Any?) -> String {
         if let stringValue = object as? String {
             return stringValue
         } else {
@@ -20,7 +20,7 @@ struct ParserHelper {
         }
     }
     
-    static func getDouble(from object: AnyObject?) -> Double {
+    static func getDouble(from object: Any?) -> Double {
         if let doubleValue = object as? Double {
             return doubleValue
         } else {

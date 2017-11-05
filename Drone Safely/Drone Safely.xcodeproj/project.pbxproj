@@ -38,6 +38,7 @@
 		A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA02B01FAC77160044544A /* SignupViewController.swift */; };
 		A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EC1FAF19C2005ECF52 /* Location.swift */; };
 		A7D6A1F01FAF1BA9005ECF52 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */; };
+		A7D6A1F21FAF1E32005ECF52 /* LocationsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */; };
 		E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		A7AA02B01FAC77160044544A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A7D6A1EC1FAF19C2005ECF52 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsClient.swift; sourceTree = "<group>"; };
 		B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone Safely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone SafelyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,6 +217,7 @@
 		A7719E0F1FAB327500BD557A /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				A7719E311FAB327600BD557A /* APIClient.swift in Sources */,
 				A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */,
 				A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */,
+				A7D6A1F21FAF1E32005ECF52 /* LocationsClient.swift in Sources */,
 				A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */,
 				A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */,
 				A7D6A1F01FAF1BA9005ECF52 /* DataHelper.swift in Sources */,

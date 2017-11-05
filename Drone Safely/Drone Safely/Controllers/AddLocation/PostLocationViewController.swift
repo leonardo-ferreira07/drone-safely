@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreLocation
-import FirebaseDatabase
 
 class PostLocationViewController: BaseDroneSafelyViewController {
 
@@ -74,16 +73,10 @@ extension PostLocationViewController {
                                 locationDescription: locationDescription,
                                 latitude: coordinate?.latitude ?? 0,
                                 longitude: coordinate?.longitude ?? 0)
-        DataHelper.shared.databaseRef.child("locations").childByAutoId().setValue(location.toDictionary())
+        LocationsClient.postNewLocation(location)
         view.stopLoadingAnimation()
         dismiss(animated: true, completion: nil)
         
-        let recentLocationsQuery = DataHelper.shared.databaseRef.child("locations").queryLimited(toFirst: 100)
-        recentLocationsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
-            for snap in snapshot.children {
-                print((snap as! DataSnapshot).value)
-            }
-        })
     }
     
     private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {
