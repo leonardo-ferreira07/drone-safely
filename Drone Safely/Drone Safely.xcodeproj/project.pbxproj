@@ -36,6 +36,7 @@
 		A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */; };
 		A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79F82411FAB53840055A3A5 /* LoginHelper.swift */; };
 		A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA02B01FAC77160044544A /* SignupViewController.swift */; };
+		A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EC1FAF19C2005ECF52 /* Location.swift */; };
 		E2A4A6ABD2C9F901CB5C4BA4 /* libPods-Drone SafelyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A79F82411FAB53840055A3A5 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		A7AA02B01FAC77160044544A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A7D6A1EC1FAF19C2005ECF52 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone Safely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Drone SafelyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 		A7719D751FAB307800BD557A /* Drone Safely */ = {
 			isa = PBXGroup;
 			children = (
+				A7D6A1EB1FAF197F005ECF52 /* Model */,
 				A7719E0E1FAB327500BD557A /* API */,
 				A7719E121FAB327600BD557A /* Controllers */,
 				A7719E091FAB327500BD557A /* Extensions */,
@@ -344,6 +347,14 @@
 				A7AA02B01FAC77160044544A /* SignupViewController.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		A7D6A1EB1FAF197F005ECF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7D6A1EC1FAF19C2005ECF52 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,6 +583,7 @@
 				A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */,
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
+				A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */,
 				A7719E331FAB327600BD557A /* ListViewController.swift in Sources */,
 				A771A8881FAED1AB00C5FA28 /* LocationManagerHelper.swift in Sources */,
 				A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */,

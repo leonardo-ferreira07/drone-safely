@@ -61,21 +61,22 @@ extension PostLocationViewController {
     func getGeocoder() {
         resignTextFields()
         
-        guard let location = locationNameTextField.text, location.count > 0 else {
+        guard let locationName = locationNameTextField.text, locationName.count > 0 else {
             showAlert("Location Error", message: "You must insert a location before continue.")
             return
         }
         
-        guard let link = descriptionTextField.text, link.count > 0 else {
+        guard let locationDescription = descriptionTextField.text, locationDescription.count > 0 else {
             showAlert("Location Error", message: "You must insert a media link before continue.")
             return
         }
         
         view.startLoadingAnimation()
-        ref.child("locations").childByAutoId().setValue(["locationName": location,
-                                                        "locationDescription": link,
-                                                        "latitude": coordinate?.latitude ?? 0,
-                                                        "longitude": coordinate?.longitude ?? 0])
+        let location = Location(locationName: locationName,
+                                locationDescription: locationDescription,
+                                latitude: coordinate?.latitude ?? 0,
+                                longitude: coordinate?.longitude ?? 0)
+        ref.child("locations").childByAutoId().setValue(location.toDictionary())
         view.stopLoadingAnimation()
         dismiss(animated: true, completion: nil)
         
