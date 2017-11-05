@@ -50,7 +50,7 @@ class SignupViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                 self.view.stopLoadingAnimation()
                 if let error = error {
-                    print(error)
+                    self.showAlert("Sign Up Error", message: error.localizedDescription)
                     return
                 }
                 let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()

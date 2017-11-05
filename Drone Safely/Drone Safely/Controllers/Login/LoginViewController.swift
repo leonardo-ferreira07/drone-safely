@@ -45,7 +45,7 @@ class LoginViewController: BaseDroneSafelyViewController {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 self.view.stopLoadingAnimation()
                 if let error = error {
-                    print(error)
+                    self.showAlert("Login Error", message: error.localizedDescription)
                     return
                 }
                 self.performSegue(withIdentifier: "goMainStoryboard", sender: nil)
