@@ -80,7 +80,7 @@ extension MapViewController {
 }
 
 extension MapViewController {
-    func refreshLocations () {
+    func refreshLocations() {
         refreshButton(enabled: false)
         
         LocationsClient.getLocations { (locations) in

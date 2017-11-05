@@ -26,6 +26,7 @@ struct LocationsClient {
                     }
                 }
             }
+            recentLocationsQuery.removeAllObservers()
             completion(locations)
             print(locations)
         })
