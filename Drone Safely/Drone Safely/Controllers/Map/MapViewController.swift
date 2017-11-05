@@ -16,11 +16,13 @@ class MapViewController: BaseDroneSafelyViewController {
     }
 
     @IBOutlet weak var mapView: MKMapView!
+    var locationManager: LocationManagerHelper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         refreshStudentsLocations()
+        locationManager = LocationManagerHelper.init(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,12 +77,15 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: PinIdentifier.pin.rawValue) as? MKPinAnnotationView
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: PinIdentifier.pin.rawValue)
         
+        if annotation.coordinate.latitude == mapView.userLocation.coordinate.latitude && annotation.coordinate.longitude == mapView.userLocation.coordinate.longitude {
+            return nil
+        }
         if pinView == nil {
-            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: PinIdentifier.pin.rawValue)
+            pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: PinIdentifier.pin.rawValue)
             pinView!.canShowCallout = true
-            pinView!.pinTintColor = .blue
+            pinView!.image = #imageLiteral(resourceName: "drone")
             pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         } else {
             pinView!.annotation = annotation
@@ -97,4 +102,12 @@ extension MapViewController: MKMapViewDelegate {
         }
     }
     
+}
+
+// MARK: LocationManagerHelper Delegate
+
+extension MapViewController: LocationManagerHelperDelegate {
+    func didReceiveRegion(_ region: MKCoordinateRegion) {
+        mapView.setRegion(region, animated: true)
+    }
 }

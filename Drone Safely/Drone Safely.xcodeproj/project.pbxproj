@@ -32,6 +32,7 @@
 		A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E241FAB327600BD557A /* LoadingView.swift */; };
 		A7719E3C1FAB327600BD557A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E271FAB327600BD557A /* Reachability.swift */; };
 		A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E281FAB327600BD557A /* ParserHelper.swift */; };
+		A771A8881FAED1AB00C5FA28 /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771A8871FAED1AB00C5FA28 /* LocationManagerHelper.swift */; };
 		A781C28A1FAB426E00ACD649 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */; };
 		A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79F82411FAB53840055A3A5 /* LoginHelper.swift */; };
 		A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA02B01FAC77160044544A /* SignupViewController.swift */; };
@@ -81,6 +82,7 @@
 		A7719E241FAB327600BD557A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A7719E271FAB327600BD557A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A7719E281FAB327600BD557A /* ParserHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		A771A8871FAED1AB00C5FA28 /* LocationManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
 		A781C2891FAB426E00ACD649 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A79F82411FAB53840055A3A5 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		A7AA02B01FAC77160044544A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		A7719E251FAB327600BD557A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A771A8861FAED19700C5FA28 /* Location */,
 				A79F82401FAB53740055A3A5 /* LoginHelper */,
 				A7719E261FAB327600BD557A /* 3rd Party */,
 				A7719E281FAB327600BD557A /* ParserHelper.swift */,
@@ -317,6 +320,14 @@
 				A7719E271FAB327600BD557A /* Reachability.swift */,
 			);
 			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		A771A8861FAED19700C5FA28 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				A771A8871FAED1AB00C5FA28 /* LocationManagerHelper.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		A79F82401FAB53740055A3A5 /* LoginHelper */ = {
@@ -562,6 +573,7 @@
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
 				A7719E331FAB327600BD557A /* ListViewController.swift in Sources */,
+				A771A8881FAED1AB00C5FA28 /* LocationManagerHelper.swift in Sources */,
 				A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */,
 				A7719E301FAB327600BD557A /* String+Validations.swift in Sources */,
 				A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */,
