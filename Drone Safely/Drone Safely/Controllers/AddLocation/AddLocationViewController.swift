@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import FirebaseDatabase
 
 class AddLocationViewController: BaseDroneSafelyViewController {
 
@@ -17,6 +18,7 @@ class AddLocationViewController: BaseDroneSafelyViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     var coordinate: CLLocationCoordinate2D?
+    var ref: DatabaseReference!
     
     lazy var geocoder = CLGeocoder()
     
@@ -24,6 +26,7 @@ class AddLocationViewController: BaseDroneSafelyViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        ref = Database.database().reference()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -69,11 +72,19 @@ extension AddLocationViewController {
         }
         
         view.startLoadingAnimation()
-        geocoder.geocodeAddressString(location) { (placemarks, error) in
-            self.view.stopLoadingAnimation()
-            self.processResponse(withPlacemarks: placemarks, error: error)
-        }
+        ref.child("locations").childByAutoId().setValue(["locationName": location,
+                                                        "locationDescription": link,
+                                                        "latitude": coordinate?.latitude ?? 0,
+                                                        "longitude": coordinate?.longitude ?? 0])
+        view.stopLoadingAnimation()
+        dismiss(animated: true, completion: nil)
         
+        let recentPostsQuery = ref.child("locations").queryLimited(toFirst: 100)
+        recentPostsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
+            for snap in snapshot.children {
+                print((snap as! DataSnapshot).value)
+            }
+        })
     }
     
     private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {

@@ -5,6 +5,7 @@ target 'Drone Safely' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'Drone SafelyTests' do
     inherit! :search_paths

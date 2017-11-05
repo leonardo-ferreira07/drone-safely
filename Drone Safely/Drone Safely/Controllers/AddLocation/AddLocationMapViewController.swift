@@ -26,6 +26,12 @@ class AddLocationMapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? AddLocationViewController {
+            viewController.coordinate = coordinate
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -64,6 +70,7 @@ extension AddLocationViewController: MKMapViewDelegate {
         case .starting:
             view.dragState = .dragging
         case .ending, .canceling:
+            self.coordinate = view.annotation?.coordinate
             view.dragState = .none
         default: break
         }
