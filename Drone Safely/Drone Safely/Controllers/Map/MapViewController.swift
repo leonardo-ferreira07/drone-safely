@@ -17,17 +17,29 @@ class MapViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: LocationManagerHelper!
+    var canAddPin: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         refreshStudentsLocations()
         locationManager = LocationManagerHelper.init(self)
+        addGesture()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let coordinate = sender as? CLLocationCoordinate2D {
+            if let viewController = segue.destination as? UINavigationController {
+                if let addMapViewController = viewController.viewControllers.first as? AddLocationMapViewController {
+                    addMapViewController.coordinate = coordinate
+                }
+            }
+        }
     }
     
     // MARK: - Actions
@@ -110,4 +122,35 @@ extension MapViewController: LocationManagerHelperDelegate {
     func didReceiveRegion(_ region: MKCoordinateRegion) {
         mapView.setRegion(region, animated: true)
     }
+}
+
+// MARK: - UIGesture Recognizer
+
+extension MapViewController {
+    
+    func addGesture() {
+        let gestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(triggerLongpressOn(_:)))
+        mapView.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    @objc func triggerLongpressOn(_ gestureRecognizer: UIGestureRecognizer) {
+        
+        if canAddPin {
+            let touchPoint = gestureRecognizer.location(in: mapView)
+            let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = newCoordinates
+            annotation.title = "\(newCoordinates.latitude) \(newCoordinates.longitude)"
+            performSegue(withIdentifier: "goToLocationStoryboard", sender: newCoordinates)
+//            mapView.addAnnotation(annotation)
+        }
+        
+        if gestureRecognizer.state == UIGestureRecognizerState.began {
+            canAddPin = false
+        } else if gestureRecognizer.state == UIGestureRecognizerState.ended {
+            canAddPin = true
+        }
+        
+    }
+    
 }

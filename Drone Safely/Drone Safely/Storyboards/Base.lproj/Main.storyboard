@@ -204,7 +204,7 @@
                             <barButtonItem systemItem="add" id="JI6-ak-8rR">
                                 <connections>
                                     <action selector="addStudentLocationPressed:" destination="BYZ-38-t0r" id="yWA-vq-vIG"/>
-                                    <segue destination="JBm-Sj-1bK" kind="show" id="27e-fO-pQN"/>
+                                    <segue destination="JBm-Sj-1bK" kind="show" identifier="goToLocationStoryboard" id="27e-fO-pQN"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="refresh" id="h66-FM-1Ge">

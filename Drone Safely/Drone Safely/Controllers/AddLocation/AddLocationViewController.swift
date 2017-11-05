@@ -30,15 +30,6 @@ class AddLocationViewController: BaseDroneSafelyViewController {
         resignTextFields()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? AddLocationMapViewController {
-            viewController.coordinate = coordinate
-            viewController.mapString = locationTextField.text
-            viewController.mediaURL = linkTextField.text
-        }
-    }
-    
-
     // MARK: - Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {

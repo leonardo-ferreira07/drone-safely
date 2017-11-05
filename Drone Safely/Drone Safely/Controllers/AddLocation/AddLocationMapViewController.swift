@@ -14,8 +14,6 @@ class AddLocationMapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     var coordinate: CLLocationCoordinate2D?
-    var mediaURL: String?
-    var mapString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +25,11 @@ class AddLocationMapViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: Actions
     
+    // MARK: - Actions
     
-    @IBAction func postLocationPressed(_ sender: Any) {
-        
-        if let mapString = mapString, let mediaURL = mediaURL, let coordinate = coordinate {
-            self.view.startLoadingAnimation()
-            
-        }
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
@@ -56,9 +49,23 @@ extension AddLocationMapViewController {
             self.mapView.setRegion(region, animated: true)
             let point = MKPointAnnotation()
             point.coordinate = coordinate
-            let userAnnotationView:MKPinAnnotationView = MKPinAnnotationView(annotation: point, reuseIdentifier: nil)
+            let userAnnotationView: MKAnnotationView = MKAnnotationView(annotation: point, reuseIdentifier: nil)
+            userAnnotationView.isDraggable = true
             self.mapView.addAnnotation(userAnnotationView.annotation!)
             self.mapView.showsUserLocation = true
+        }
+    }
+}
+
+extension AddLocationViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+        switch newState {
+        case .starting:
+            view.dragState = .dragging
+        case .ending, .canceling:
+            view.dragState = .none
+        default: break
         }
     }
 }
