@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ListStudentTableViewCell: UITableViewCell {
+class ListLocationTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var studentName: UILabel!
-    @IBOutlet weak var studentMediaLink: UILabel!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var locationDescription: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,9 +28,9 @@ class ListStudentTableViewCell: UITableViewCell {
 
 // MARK: - Configure cell
 
-extension ListStudentTableViewCell {
-//    func confugureCell(with studentLocation: StudentLocation) {
-//        studentName.text = studentLocation.firstName + " " + studentLocation.lastName
-//        studentMediaLink.text = studentLocation.mediaURL
-//    }
+extension ListLocationTableViewCell {
+    func confugureCell(with location: Location) {
+        locationName.text = location.locationName
+        locationDescription.text = location.locationDescription
+    }
 }

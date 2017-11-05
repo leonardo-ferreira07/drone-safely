@@ -26,7 +26,7 @@
 		A7719E351FAB327600BD557A /* BaseDroneSafelyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1A1FAB327600BD557A /* BaseDroneSafelyViewController.swift */; };
 		A7719E361FAB327600BD557A /* ConfirmLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1C1FAB327600BD557A /* ConfirmLocationMapViewController.swift */; };
 		A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1D1FAB327600BD557A /* PostLocationViewController.swift */; };
-		A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */; };
+		A7719E381FAB327600BD557A /* ListLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E201FAB327600BD557A /* ListLocationTableViewCell.swift */; };
 		A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */; };
 		A7719E3A1FAB327600BD557A /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7719E231FAB327600BD557A /* LoadingView.xib */; };
 		A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E241FAB327600BD557A /* LoadingView.swift */; };
@@ -79,7 +79,7 @@
 		A7719E1A1FAB327600BD557A /* BaseDroneSafelyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDroneSafelyViewController.swift; sourceTree = "<group>"; };
 		A7719E1C1FAB327600BD557A /* ConfirmLocationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLocationMapViewController.swift; sourceTree = "<group>"; };
 		A7719E1D1FAB327600BD557A /* PostLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
-		A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStudentTableViewCell.swift; sourceTree = "<group>"; };
+		A7719E201FAB327600BD557A /* ListLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLocationTableViewCell.swift; sourceTree = "<group>"; };
 		A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewPresenter.swift; sourceTree = "<group>"; };
 		A7719E231FAB327600BD557A /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		A7719E241FAB327600BD557A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 		A7719E1F1FAB327600BD557A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */,
+				A7719E201FAB327600BD557A /* ListLocationTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -587,7 +587,7 @@
 				A7719E351FAB327600BD557A /* BaseDroneSafelyViewController.swift in Sources */,
 				A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */,
 				A7719E311FAB327600BD557A /* APIClient.swift in Sources */,
-				A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */,
+				A7719E381FAB327600BD557A /* ListLocationTableViewCell.swift in Sources */,
 				A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */,
 				A7D6A1F21FAF1E32005ECF52 /* LocationsClient.swift in Sources */,
 				A7719E3B1FAB327600BD557A /* LoadingView.swift in Sources */,

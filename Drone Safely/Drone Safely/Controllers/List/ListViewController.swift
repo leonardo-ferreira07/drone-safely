@@ -11,6 +11,7 @@ import UIKit
 class ListViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var locations: [Location] = []
     
     enum ListTableCell: String {
         case listLocationsTableViewCell
@@ -44,19 +45,19 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return locations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.listLocationsTableViewCell.rawValue, for: indexPath) as? ListStudentTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.listLocationsTableViewCell.rawValue, for: indexPath) as? ListLocationTableViewCell {
             return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let cell = cell as? ListStudentTableViewCell {
-//            cell.confugureCell(with: MemoryStorage.shared.studentsLocations[indexPath.row])
+        if let cell = cell as? ListLocationTableViewCell {
+            cell.confugureCell(with: locations[indexPath.row])
         }
     }
     
@@ -76,6 +77,19 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 extension ListViewController {
     func refreshLocations() {
         refreshButton(enabled: false)
-        
+        LocationsClient.getLocations { (locations) in
+            self.refreshButton(enabled: true)
+            self.tableView.beginUpdates()
+            for (index, _) in self.locations.enumerated().reversed() {
+                self.tableView.deleteRows(at: [IndexPath.init(row: index, section: 0)], with: .fade)
+                self.locations.remove(at: index)
+            }
+            for (index, location) in locations.enumerated() {
+                self.locations.append(location)
+                self.tableView.insertRows(at: [IndexPath.init(row: index, section: 0)], with: .fade)
+            }
+            self.tableView.endUpdates()
+            self.tableView.reloadData()
+        }
     }
 }
