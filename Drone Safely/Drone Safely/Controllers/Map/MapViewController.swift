@@ -154,7 +154,6 @@ extension MapViewController {
             annotation.coordinate = newCoordinates
             annotation.title = "\(newCoordinates.latitude) \(newCoordinates.longitude)"
             performSegue(withIdentifier: "goToLocationStoryboard", sender: newCoordinates)
-//            mapView.addAnnotation(annotation)
         }
         
         if gestureRecognizer.state == UIGestureRecognizerState.began {
