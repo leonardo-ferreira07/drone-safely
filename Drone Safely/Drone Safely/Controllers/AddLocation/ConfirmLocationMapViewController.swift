@@ -27,7 +27,7 @@ class ConfirmLocationMapViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? AddLocationViewController {
+        if let viewController = segue.destination as? PostLocationViewController {
             viewController.coordinate = coordinate
         }
     }
@@ -63,7 +63,7 @@ extension ConfirmLocationMapViewController {
     }
 }
 
-extension AddLocationViewController: MKMapViewDelegate {
+extension PostLocationViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
         switch newState {

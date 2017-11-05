@@ -25,7 +25,7 @@
 		A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E181FAB327600BD557A /* LoginViewController.swift */; };
 		A7719E351FAB327600BD557A /* BaseDroneSafelyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1A1FAB327600BD557A /* BaseDroneSafelyViewController.swift */; };
 		A7719E361FAB327600BD557A /* ConfirmLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1C1FAB327600BD557A /* ConfirmLocationMapViewController.swift */; };
-		A7719E371FAB327600BD557A /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */; };
+		A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E1D1FAB327600BD557A /* PostLocationViewController.swift */; };
 		A7719E381FAB327600BD557A /* ListStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */; };
 		A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */; };
 		A7719E3A1FAB327600BD557A /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7719E231FAB327600BD557A /* LoadingView.xib */; };
@@ -75,7 +75,7 @@
 		A7719E181FAB327600BD557A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A7719E1A1FAB327600BD557A /* BaseDroneSafelyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDroneSafelyViewController.swift; sourceTree = "<group>"; };
 		A7719E1C1FAB327600BD557A /* ConfirmLocationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLocationMapViewController.swift; sourceTree = "<group>"; };
-		A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		A7719E1D1FAB327600BD557A /* PostLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLocationViewController.swift; sourceTree = "<group>"; };
 		A7719E201FAB327600BD557A /* ListStudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStudentTableViewCell.swift; sourceTree = "<group>"; };
 		A7719E221FAB327600BD557A /* LoadingViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewPresenter.swift; sourceTree = "<group>"; };
 		A7719E231FAB327600BD557A /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A7719E1C1FAB327600BD557A /* ConfirmLocationMapViewController.swift */,
-				A7719E1D1FAB327600BD557A /* AddLocationViewController.swift */,
+				A7719E1D1FAB327600BD557A /* PostLocationViewController.swift */,
 			);
 			path = AddLocation;
 			sourceTree = "<group>";
@@ -569,7 +569,7 @@
 				A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */,
 				A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */,
 				A7719E361FAB327600BD557A /* ConfirmLocationMapViewController.swift in Sources */,
-				A7719E371FAB327600BD557A /* AddLocationViewController.swift in Sources */,
+				A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */,
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
 				A7719E331FAB327600BD557A /* ListViewController.swift in Sources */,

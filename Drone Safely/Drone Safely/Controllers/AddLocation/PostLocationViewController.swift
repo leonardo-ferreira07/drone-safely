@@ -10,10 +10,10 @@ import UIKit
 import CoreLocation
 import FirebaseDatabase
 
-class AddLocationViewController: BaseDroneSafelyViewController {
+class PostLocationViewController: BaseDroneSafelyViewController {
 
-    @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var linkTextField: UITextField!
+    @IBOutlet weak var locationNameTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var topIconConstraint: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
     
@@ -57,16 +57,16 @@ class AddLocationViewController: BaseDroneSafelyViewController {
 
 // MARK: - Geocoder actions
 
-extension AddLocationViewController {
+extension PostLocationViewController {
     func getGeocoder() {
         resignTextFields()
         
-        guard let location = locationTextField.text, location.count > 0 else {
+        guard let location = locationNameTextField.text, location.count > 0 else {
             showAlert("Location Error", message: "You must insert a location before continue.")
             return
         }
         
-        guard let link = linkTextField.text, link.count > 0 else {
+        guard let link = descriptionTextField.text, link.count > 0 else {
             showAlert("Location Error", message: "You must insert a media link before continue.")
             return
         }
@@ -110,9 +110,9 @@ extension AddLocationViewController {
 
 // MARK: - Resign TextFields
 
-extension AddLocationViewController {
+extension PostLocationViewController {
     func resignTextFields() {
-        locationTextField.resignFirstResponder()
-        linkTextField.resignFirstResponder()
+        locationNameTextField.resignFirstResponder()
+        descriptionTextField.resignFirstResponder()
     }
 }

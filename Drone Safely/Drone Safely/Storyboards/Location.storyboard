@@ -25,7 +25,7 @@
         <!--Post Location-->
         <scene sceneID="5bY-xn-Wso">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="4ao-e2-0If" customClass="AddLocationViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="4ao-e2-0If" customClass="PostLocationViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7Y-Ho-go9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,8 +100,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="linkTextField" destination="Lru-b9-GVg" id="cDv-th-WYk"/>
-                        <outlet property="locationTextField" destination="IbC-KY-HiW" id="Vgw-SG-hpG"/>
+                        <outlet property="descriptionTextField" destination="Lru-b9-GVg" id="cDv-th-WYk"/>
+                        <outlet property="locationNameTextField" destination="IbC-KY-HiW" id="Vgw-SG-hpG"/>
                         <outlet property="stackView" destination="get-PE-K3x" id="F5S-my-ldO"/>
                         <outlet property="topIconConstraint" destination="bD2-Ky-KG0" id="way-5h-VIq"/>
                     </connections>
