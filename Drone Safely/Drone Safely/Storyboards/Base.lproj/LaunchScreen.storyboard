@@ -24,18 +24,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tie-5X-nwK">
-                                <rect key="frame" x="113" y="299.33333333333331" width="149" height="223.66666666666669"/>
+                                <rect key="frame" x="62.666666666666657" y="228.33333333333394" width="249.99999999999997" height="366.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🚁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBg-Eq-8kp">
-                                        <rect key="frame" x="9.6666666666666714" y="0.0" width="130" height="143.33333333333334"/>
+                                        <rect key="frame" x="60" y="0.0" width="130" height="143.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="120"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone Safely" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uao-vg-Z4C">
-                                        <rect key="frame" x="0.0" y="193.33333333333337" width="149" height="30.333333333333343"/>
+                                        <rect key="frame" x="50.666666666666657" y="193.33333333333334" width="149" height="30.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="26"/>
                                         <color key="textColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep flying your drone safe, checking secure locations to fly with this app 😎" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTh-Yv-tVG">
+                                        <rect key="frame" x="0.0" y="273.66666666666663" width="250" height="92.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="LQ0-X8-h2B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

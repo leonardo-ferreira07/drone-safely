@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9RK-FR-BUA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -29,11 +33,11 @@
             <objects>
                 <viewController id="bBX-lm-5Nf" customClass="ListViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6q-87-RSo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-n7-dF4">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listLocationsTableViewCell" rowHeight="70" id="ZPp-qM-tq9" customClass="ListLocationTableViewCell" customModule="Drone_Safely" customModuleProvider="target">
@@ -98,7 +102,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E4I-ZI-5Et"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="NX5-OL-R6C"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_listview-deselected" selectedImage="icon_listview-selected" id="NX5-OL-R6C"/>
                     <navigationItem key="navigationItem" title="Drone Safely" id="aZ3-FU-qLr">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="hox-dK-JbU">
                             <connections>
@@ -170,11 +174,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1U-AH-LU5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="AG0-sw-vIb"/>
                                 </connections>
@@ -189,7 +193,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3PG-lH-ViG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SKG-Bs-BsH"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="icon_mapview-deselected" selectedImage="icon_mapview-selected" id="SKG-Bs-BsH"/>
                     <navigationItem key="navigationItem" title="Drone Safely" id="KJM-zv-0mi">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Rwe-bV-z47">
                             <connections>
@@ -238,6 +242,6 @@
         <image name="icon_pin" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="27e-fO-pQN"/>
+        <segue reference="Zz5-k2-lDb"/>
     </inferredMetricsTieBreakers>
 </document>
