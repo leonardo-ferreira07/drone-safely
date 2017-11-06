@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="get-PE-K3x">
-                                <rect key="frame" x="40" y="84" width="295" height="170"/>
+                                <rect key="frame" x="40" y="84" width="295" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put Your Location Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IbC-KY-HiW">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -46,17 +46,20 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Share a description (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lru-b9-GVg">
-                                        <rect key="frame" x="0.0" y="60" width="295" height="50"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Wz-3Q-TBD" customClass="DesignableTextView" customModule="Drone_Safely" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="295" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="WBp-cX-KaO"/>
+                                            <constraint firstAttribute="height" constant="100" id="PTz-l7-47s"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" smartInsertDeleteType="no" textContentType="url"/>
-                                    </textField>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Put a brief description about this place, if you want!"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-5Q-eUu" customClass="DesignableButton" customModule="Drone_Safely" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="295" height="50"/>
+                                        <rect key="frame" x="0.0" y="170" width="295" height="50"/>
                                         <color key="backgroundColor" red="0.05443591624" green="0.3977286518" blue="0.53933483360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="N9k-Ap-yXP"/>
@@ -75,7 +78,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="BwQ-C8-j87"/>
+                                    <constraint firstAttribute="height" constant="220" id="BwQ-C8-j87"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -95,7 +98,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTextField" destination="Lru-b9-GVg" id="cDv-th-WYk"/>
                         <outlet property="locationNameTextField" destination="IbC-KY-HiW" id="Vgw-SG-hpG"/>
                         <outlet property="stackView" destination="get-PE-K3x" id="F5S-my-ldO"/>
                     </connections>

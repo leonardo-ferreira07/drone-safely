@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7974D24BEDECFA1F1F303A55 /* libPods-Drone Safely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */; };
 		A71720971FB08E98009F3D65 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71720961FB08E98009F3D65 /* LocationDetailsViewController.swift */; };
+		A71720991FB091C2009F3D65 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71720981FB091C2009F3D65 /* DesignableTextView.swift */; };
 		A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D761FAB307800BD557A /* AppDelegate.swift */; };
 		A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7D1FAB307800BD557A /* Assets.xcassets */; };
 		A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */; };
@@ -59,6 +60,7 @@
 		5980FFD4F895BC20AACDE17C /* Pods-Drone SafelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone SafelyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		759236E01F5E4F7ABBDE9452 /* Pods-Drone Safely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone Safely.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely.debug.xcconfig"; sourceTree = "<group>"; };
 		A71720961FB08E98009F3D65 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		A71720981FB091C2009F3D65 /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
 		A7719D731FAB307800BD557A /* Drone Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Safely.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7719D761FAB307800BD557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7719D7D1FAB307800BD557A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				A7719E0B1FAB327500BD557A /* Extensions.swift */,
 				A7719E0C1FAB327500BD557A /* DesignableView.swift */,
 				A7719E0D1FAB327500BD557A /* String+Validations.swift */,
+				A71720981FB091C2009F3D65 /* DesignableTextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
 				A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */,
+				A71720991FB091C2009F3D65 /* DesignableTextView.swift in Sources */,
 				A7719E331FAB327600BD557A /* ListViewController.swift in Sources */,
 				A771A8881FAED1AB00C5FA28 /* LocationManagerHelper.swift in Sources */,
 				A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */,

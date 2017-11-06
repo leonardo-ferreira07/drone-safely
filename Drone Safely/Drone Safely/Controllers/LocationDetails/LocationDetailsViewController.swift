@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class LocationDetailsViewController: UIViewController {
 
@@ -23,10 +24,28 @@ class LocationDetailsViewController: UIViewController {
             locationDescription.text = location.locationDescription
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Actions
+    
+    @IBAction func navigateButtonPressed(_ sender: Any) {
+        openMapForPlace()
     }
     
+    
+}
+
+// MARK: - Apple Maps navigation
+
+extension LocationDetailsViewController {
+    func openMapForPlace() {
+        let regionDistance: CLLocationDistance = 10000
+        let coordinates = CLLocationCoordinate2DMake(location?.latitude ?? 0, location?.longitude ?? 0)
+        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = location?.locationName
+        mapItem.openInMaps(launchOptions: options)
+    }
 }

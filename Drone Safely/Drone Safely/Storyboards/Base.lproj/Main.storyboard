@@ -263,14 +263,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG6-jw-7xf" customClass="DesignableButton" customModule="Drone_Safely" customModuleProvider="target">
+                                <rect key="frame" x="207" y="125" width="148" height="30"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MZ3-me-x4R"/>
+                                </constraints>
+                                <state key="normal" title="Navigate to location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="navigateButtonPressed:" destination="Iar-GD-v4T" eventType="touchUpInside" id="fRS-5L-DBz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sUD-2s-hI8" firstAttribute="top" secondItem="5ba-2b-9x0" secondAttribute="bottom" constant="8" id="2yK-62-5a8"/>
                             <constraint firstItem="5ba-2b-9x0" firstAttribute="top" secondItem="qGs-oW-Z3a" secondAttribute="top" constant="30" id="4Yq-j6-7ov"/>
+                            <constraint firstItem="sUD-2s-hI8" firstAttribute="top" secondItem="ZG6-jw-7xf" secondAttribute="bottom" constant="8" id="4wk-wS-4an"/>
+                            <constraint firstItem="qGs-oW-Z3a" firstAttribute="trailing" secondItem="ZG6-jw-7xf" secondAttribute="trailing" constant="20" id="5u8-ks-8OQ"/>
                             <constraint firstItem="Upb-KG-KHF" firstAttribute="leading" secondItem="5ba-2b-9x0" secondAttribute="trailing" constant="20" id="9d2-tG-mNc"/>
                             <constraint firstItem="qGs-oW-Z3a" firstAttribute="trailing" secondItem="sUD-2s-hI8" secondAttribute="trailing" constant="20" id="Chj-Cf-LdN"/>
                             <constraint firstItem="Upb-KG-KHF" firstAttribute="top" secondItem="qGs-oW-Z3a" secondAttribute="top" constant="30" id="VAe-Qy-mVX"/>
+                            <constraint firstItem="ZG6-jw-7xf" firstAttribute="leading" secondItem="5ba-2b-9x0" secondAttribute="trailing" constant="22" id="a6l-mQ-ABm"/>
                             <constraint firstItem="sUD-2s-hI8" firstAttribute="leading" secondItem="qGs-oW-Z3a" secondAttribute="leading" constant="20" id="c8L-mi-YfY"/>
                             <constraint firstItem="qGs-oW-Z3a" firstAttribute="trailing" secondItem="Upb-KG-KHF" secondAttribute="trailing" constant="20" id="hoX-zk-jTE"/>
                             <constraint firstItem="5ba-2b-9x0" firstAttribute="leading" secondItem="qGs-oW-Z3a" secondAttribute="leading" constant="20" id="pAQ-m4-6R1"/>
