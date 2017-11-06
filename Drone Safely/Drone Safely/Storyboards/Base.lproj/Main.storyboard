@@ -63,7 +63,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="Q0O-xm-Q6I">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drone-high" translatesAutoresizingMaskIntoConstraints="NO" id="Q0O-xm-Q6I">
                                                     <rect key="frame" x="20" y="17.5" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="a1Y-dy-usF"/>
@@ -310,13 +310,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="drone-high" width="512" height="512"/>
         <image name="icon_listview-deselected" width="75" height="50"/>
         <image name="icon_listview-selected" width="75" height="50"/>
         <image name="icon_mapview-deselected" width="75" height="50"/>
         <image name="icon_mapview-selected" width="75" height="50"/>
-        <image name="icon_pin" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1aJ-wf-VYW"/>
+        <segue reference="PdN-j0-35K"/>
     </inferredMetricsTieBreakers>
 </document>
