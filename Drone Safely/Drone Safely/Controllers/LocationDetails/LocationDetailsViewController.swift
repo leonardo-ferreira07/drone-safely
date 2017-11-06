@@ -38,8 +38,13 @@ class LocationDetailsViewController: UIViewController {
 
 extension LocationDetailsViewController {
     func openMapForPlace() {
+        guard let latitude = location?.latitude, let longitude = location?.longitude else {
+            showAlert("Maps error", message: "Was not possible to trace a location to required place.")
+            return
+        }
+        
         let regionDistance: CLLocationDistance = 10000
-        let coordinates = CLLocationCoordinate2DMake(location?.latitude ?? 0, location?.longitude ?? 0)
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
         let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
         let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
             MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
