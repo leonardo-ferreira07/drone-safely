@@ -18,6 +18,7 @@ class MapViewController: BaseDroneSafelyViewController {
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: LocationManagerHelper!
     var canAddPin: Bool = true
+    var locations: [(Location, MKPointAnnotation)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +44,10 @@ class MapViewController: BaseDroneSafelyViewController {
                 if let addMapViewController = viewController.viewControllers.first as? ConfirmLocationMapViewController {
                     addMapViewController.coordinate = coordinate
                 }
-            } else if let location = sender as? Location {
-                if let locationDetails = segue.destination as? LocationDetailsViewController {
-                    locationDetails.location = location
-                }
+            }
+        } else if let location = sender as? Location {
+            if let locationDetails = segue.destination as? LocationDetailsViewController {
+                locationDetails.location = location
             }
         }
     }
@@ -66,6 +67,7 @@ extension MapViewController {
         
         var annotations = [MKPointAnnotation]()
         if !locations.isEmpty {
+            self.locations.removeAll()
             self.mapView.removeAnnotations(self.mapView.annotations)
         }
         
@@ -82,6 +84,7 @@ extension MapViewController {
             annotation.subtitle = location.locationDescription
             
             annotations.append(annotation)
+            self.locations.append((location, annotation))
         }
         
         self.mapView.addAnnotations(annotations)
@@ -124,7 +127,8 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            performSegue(withIdentifier: "showLocationDetail", sender: nil)
+            let la = locations.first(where: { ($0.1.coordinate.latitude == view.annotation?.coordinate.latitude && $0.1.coordinate.longitude == view.annotation?.coordinate.longitude && $0.0.locationName == (view.annotation?.title ?? "")) })?.0
+            performSegue(withIdentifier: "showLocationDetail", sender: la)
         }
     }
     
