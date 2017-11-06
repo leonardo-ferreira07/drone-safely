@@ -22,9 +22,14 @@ class MapViewController: BaseDroneSafelyViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        refreshLocations()
         locationManager = LocationManagerHelper.init(self)
         addGesture()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshLocations()
     }
 
     override func didReceiveMemoryWarning() {
