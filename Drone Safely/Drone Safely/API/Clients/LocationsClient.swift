@@ -21,7 +21,8 @@ struct LocationsClient {
         recentLocationsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
             for snap in snapshot.children {
                 if let snap = snap as? DataSnapshot {
-                    if let locationDict = snap.value as? [String: Any] {
+                    if var locationDict = snap.value as? [String: Any] {
+                        locationDict[LocationKeys.key.rawValue] = snap.key
                         locations.append(Location.init(withDictionary: locationDict))
                     }
                 }

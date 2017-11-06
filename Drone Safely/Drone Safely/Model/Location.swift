@@ -13,6 +13,7 @@ struct Location {
     let locationDescription: String
     let latitude: Double
     let longitude: Double
+    var keyIdentifier: String = ""
     
     // MARK: - Init with Dictionary
     
@@ -28,6 +29,7 @@ struct Location {
         self.locationDescription = ParserHelper.getString(from: dictionary[LocationKeys.locationDescription.rawValue])
         self.latitude = ParserHelper.getDouble(from: dictionary[LocationKeys.latitude.rawValue])
         self.longitude = ParserHelper.getDouble(from: dictionary[LocationKeys.longitude.rawValue])
+        self.keyIdentifier = ParserHelper.getString(from: dictionary[LocationKeys.key.rawValue])
     }
     
     // MARK: - Object as Dictionary
@@ -46,4 +48,5 @@ enum LocationKeys: String {
     case locationDescription
     case latitude
     case longitude
+    case key
 }
