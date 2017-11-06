@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -109,22 +108,13 @@
                                 <action selector="deleteSessionPressed:" destination="bBX-lm-5Nf" id="b3G-oC-iuO"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="cYt-QU-T89">
-                                <connections>
-                                    <action selector="addStudentLocationPressed:" destination="bBX-lm-5Nf" id="V5V-rY-ldZ"/>
-                                    <segue destination="JBm-Sj-1bK" kind="show" id="Zz5-k2-lDb"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="3ie-JU-Igm">
-                                <connections>
-                                    <action selector="refreshStudentsLocationsPressed:" destination="bBX-lm-5Nf" id="uSE-gj-9Kn"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="3ie-JU-Igm">
+                            <connections>
+                                <action selector="refreshStudentsLocationsPressed:" destination="bBX-lm-5Nf" id="uSE-gj-9Kn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addButton" destination="cYt-QU-T89" id="Hfl-R1-Qee"/>
                         <outlet property="logoutButton" destination="hox-dK-JbU" id="Kfi-YD-yhT"/>
                         <outlet property="refreshButton" destination="3ie-JU-Igm" id="sSX-nI-X7C"/>
                         <outlet property="tableView" destination="4aH-n7-dF4" id="IPX-Bk-dHg"/>
@@ -201,26 +191,18 @@
                                 <action selector="deleteSessionPressed:" destination="BYZ-38-t0r" id="HTp-fV-EFV"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="JI6-ak-8rR">
-                                <connections>
-                                    <action selector="addStudentLocationPressed:" destination="BYZ-38-t0r" id="yWA-vq-vIG"/>
-                                    <segue destination="JBm-Sj-1bK" kind="show" identifier="goToLocationStoryboard" id="27e-fO-pQN"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="h66-FM-1Ge">
-                                <connections>
-                                    <action selector="refreshStudentsLocationsPressed:" destination="BYZ-38-t0r" id="j3u-QL-TLN"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="h66-FM-1Ge">
+                            <connections>
+                                <action selector="refreshStudentsLocationsPressed:" destination="BYZ-38-t0r" id="j3u-QL-TLN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addButton" destination="JI6-ak-8rR" id="itR-Xk-uTT"/>
                         <outlet property="logoutButton" destination="Rwe-bV-z47" id="Osu-7r-rGx"/>
                         <outlet property="mapView" destination="y1U-AH-LU5" id="WhM-ne-Vmp"/>
                         <outlet property="refreshButton" destination="h66-FM-1Ge" id="n9y-SB-LNP"/>
                         <segue destination="Iar-GD-v4T" kind="show" identifier="showLocationDetail" id="1aJ-wf-VYW"/>
+                        <segue destination="JBm-Sj-1bK" kind="show" identifier="goToLocationStoryboard" id="M5F-VP-iSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -260,7 +242,6 @@
         <image name="icon_pin" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PdN-j0-35K"/>
-        <segue reference="Zz5-k2-lDb"/>
+        <segue reference="1aJ-wf-VYW"/>
     </inferredMetricsTieBreakers>
 </document>

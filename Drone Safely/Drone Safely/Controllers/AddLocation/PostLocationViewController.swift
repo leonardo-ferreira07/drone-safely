@@ -13,7 +13,6 @@ class PostLocationViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var locationNameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var topIconConstraint: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
     
     var coordinate: CLLocationCoordinate2D?
@@ -41,12 +40,10 @@ class PostLocationViewController: BaseDroneSafelyViewController {
     }
     
     override func keyboardWillShow(_ notification: Notification) {
-        self.topIconConstraint.constant = -77
         self.stackView.spacing = 2
     }
     
     override func keyboardWillHide(_ notification: Notification) {
-        self.topIconConstraint.constant = 30
         self.stackView.spacing = 10
     }
 

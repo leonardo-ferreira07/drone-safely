@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="hIA-S3-bee">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drone-high" translatesAutoresizingMaskIntoConstraints="NO" id="hIA-S3-bee">
                                 <rect key="frame" x="156.66666666666666" y="108" width="62" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="QXp-og-xur"/>
@@ -233,7 +233,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-u" width="62" height="62"/>
+        <image name="drone-high" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nNa-Kn-qoy"/>
