@@ -115,9 +115,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.rightCalloutAccessoryView {
-            if let subtitle = view.annotation?.subtitle, let url = subtitle {
-                self.presentWebPageInSafari(withURLString: url)
-            }
+            performSegue(withIdentifier: "showLocationDetail", sender: nil)
         }
     }
     

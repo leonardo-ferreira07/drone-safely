@@ -128,6 +128,7 @@
                         <outlet property="logoutButton" destination="hox-dK-JbU" id="Kfi-YD-yhT"/>
                         <outlet property="refreshButton" destination="3ie-JU-Igm" id="sSX-nI-X7C"/>
                         <outlet property="tableView" destination="4aH-n7-dF4" id="IPX-Bk-dHg"/>
+                        <segue destination="Iar-GD-v4T" kind="show" identifier="showLocationDetail" id="PdN-j0-35K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0l-5t-sCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -219,6 +220,7 @@
                         <outlet property="logoutButton" destination="Rwe-bV-z47" id="Osu-7r-rGx"/>
                         <outlet property="mapView" destination="y1U-AH-LU5" id="WhM-ne-Vmp"/>
                         <outlet property="refreshButton" destination="h66-FM-1Ge" id="n9y-SB-LNP"/>
+                        <segue destination="Iar-GD-v4T" kind="show" identifier="showLocationDetail" id="1aJ-wf-VYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -233,6 +235,22 @@
             </objects>
             <point key="canvasLocation" x="1990" y="120"/>
         </scene>
+        <!--Location Details-->
+        <scene sceneID="AcV-BK-c2Y">
+            <objects>
+                <viewController id="Iar-GD-v4T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00d-Ye-e7T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qGs-oW-Z3a"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location Details" id="sVC-4c-wrv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfA-f4-OtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="120"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icon_listview-deselected" width="75" height="50"/>
@@ -242,6 +260,7 @@
         <image name="icon_pin" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="PdN-j0-35K"/>
         <segue reference="Zz5-k2-lDb"/>
     </inferredMetricsTieBreakers>
 </document>
