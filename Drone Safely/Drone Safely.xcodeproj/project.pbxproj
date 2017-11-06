@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7974D24BEDECFA1F1F303A55 /* libPods-Drone Safely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B972F6FA0F0149C69449D51B /* libPods-Drone Safely.a */; };
+		A71720971FB08E98009F3D65 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71720961FB08E98009F3D65 /* LocationDetailsViewController.swift */; };
 		A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D761FAB307800BD557A /* AppDelegate.swift */; };
 		A7719D7E1FAB307800BD557A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7719D7D1FAB307800BD557A /* Assets.xcassets */; };
 		A7719D8C1FAB307800BD557A /* Drone_SafelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719D8B1FAB307800BD557A /* Drone_SafelyTests.swift */; };
@@ -57,6 +58,7 @@
 		5634CD11A47E129450442E1C /* Pods-Drone Safely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone Safely.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely.release.xcconfig"; sourceTree = "<group>"; };
 		5980FFD4F895BC20AACDE17C /* Pods-Drone SafelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone SafelyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone SafelyTests/Pods-Drone SafelyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		759236E01F5E4F7ABBDE9452 /* Pods-Drone Safely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drone Safely.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drone Safely/Pods-Drone Safely.debug.xcconfig"; sourceTree = "<group>"; };
+		A71720961FB08E98009F3D65 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		A7719D731FAB307800BD557A /* Drone Safely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drone Safely.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7719D761FAB307800BD557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7719D7D1FAB307800BD557A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 				EB2E91BAEA557AFFC6316F55 /* libPods-Drone SafelyTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71720951FB08E81009F3D65 /* LocationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A71720961FB08E98009F3D65 /* LocationDetailsViewController.swift */,
+			);
+			path = LocationDetails;
 			sourceTree = "<group>";
 		};
 		A7719D6A1FAB307800BD557A = {
@@ -232,6 +242,7 @@
 		A7719E121FAB327600BD557A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A71720951FB08E81009F3D65 /* LocationDetails */,
 				A7AA02AF1FAC77060044544A /* Signup */,
 				A7719E131FAB327600BD557A /* Map */,
 				A7719E151FAB327600BD557A /* List */,
@@ -596,6 +607,7 @@
 				A7719D771FAB307800BD557A /* AppDelegate.swift in Sources */,
 				A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */,
 				A7719E361FAB327600BD557A /* ConfirmLocationMapViewController.swift in Sources */,
+				A71720971FB08E98009F3D65 /* LocationDetailsViewController.swift in Sources */,
 				A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */,
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,

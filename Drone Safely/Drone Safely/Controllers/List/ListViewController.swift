@@ -28,6 +28,14 @@ class ListViewController: BaseDroneSafelyViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let location = sender as? Location {
+            if let locationDetails = segue.destination as? LocationDetailsViewController {
+                locationDetails.location = location
+            }
+        }
+    }
+    
     // MARK: - Overriding Actions
     
     override func refreshStudentsLocationsPressed(_ sender: Any) {
@@ -63,7 +71,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showLocationDetail", sender: nil)
+        performSegue(withIdentifier: "showLocationDetail", sender: locations[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

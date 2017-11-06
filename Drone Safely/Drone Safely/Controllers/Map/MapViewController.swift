@@ -43,6 +43,10 @@ class MapViewController: BaseDroneSafelyViewController {
                 if let addMapViewController = viewController.viewControllers.first as? ConfirmLocationMapViewController {
                     addMapViewController.coordinate = coordinate
                 }
+            } else if let location = sender as? Location {
+                if let locationDetails = segue.destination as? LocationDetailsViewController {
+                    locationDetails.location = location
+                }
             }
         }
     }

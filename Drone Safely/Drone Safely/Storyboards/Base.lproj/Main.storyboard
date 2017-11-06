@@ -220,18 +220,72 @@
         <!--Location Details-->
         <scene sceneID="AcV-BK-c2Y">
             <objects>
-                <viewController id="Iar-GD-v4T" sceneMemberID="viewController">
+                <viewController id="Iar-GD-v4T" customClass="LocationDetailsViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00d-Ye-e7T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ba-2b-9x0">
+                                <rect key="frame" x="20" y="94" width="165" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLY-GI-7t0">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location description:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-WS-8LB">
+                                        <rect key="frame" x="0.0" y="40.5" width="165" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="Sq4-Ot-ybS"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sUD-2s-hI8">
+                                <rect key="frame" x="20" y="163" width="335" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="IRI-57-c2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upb-KG-KHF">
+                                <rect key="frame" x="205" y="94" width="150" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zZ8-D6-leQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sUD-2s-hI8" firstAttribute="top" secondItem="5ba-2b-9x0" secondAttribute="bottom" constant="8" id="2yK-62-5a8"/>
+                            <constraint firstItem="5ba-2b-9x0" firstAttribute="top" secondItem="qGs-oW-Z3a" secondAttribute="top" constant="30" id="4Yq-j6-7ov"/>
+                            <constraint firstItem="Upb-KG-KHF" firstAttribute="leading" secondItem="5ba-2b-9x0" secondAttribute="trailing" constant="20" id="9d2-tG-mNc"/>
+                            <constraint firstItem="qGs-oW-Z3a" firstAttribute="trailing" secondItem="sUD-2s-hI8" secondAttribute="trailing" constant="20" id="Chj-Cf-LdN"/>
+                            <constraint firstItem="Upb-KG-KHF" firstAttribute="top" secondItem="qGs-oW-Z3a" secondAttribute="top" constant="30" id="VAe-Qy-mVX"/>
+                            <constraint firstItem="sUD-2s-hI8" firstAttribute="leading" secondItem="qGs-oW-Z3a" secondAttribute="leading" constant="20" id="c8L-mi-YfY"/>
+                            <constraint firstItem="qGs-oW-Z3a" firstAttribute="trailing" secondItem="Upb-KG-KHF" secondAttribute="trailing" constant="20" id="hoX-zk-jTE"/>
+                            <constraint firstItem="5ba-2b-9x0" firstAttribute="leading" secondItem="qGs-oW-Z3a" secondAttribute="leading" constant="20" id="pAQ-m4-6R1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qGs-oW-Z3a"/>
                     </view>
                     <navigationItem key="navigationItem" title="Location Details" id="sVC-4c-wrv"/>
+                    <connections>
+                        <outlet property="locationDescription" destination="sUD-2s-hI8" id="zgg-Nv-Ly1"/>
+                        <outlet property="locationName" destination="Upb-KG-KHF" id="iRR-NV-JPv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfA-f4-OtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2703" y="120"/>
+            <point key="canvasLocation" x="2701.5999999999999" y="119.1904047976012"/>
         </scene>
     </scenes>
     <resources>
