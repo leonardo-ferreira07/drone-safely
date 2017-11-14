@@ -13,8 +13,10 @@ class LocationDetailsViewController: UIViewController {
 
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var locationDescription: UITextView!
+    @IBOutlet weak var tableView: UITableView!
     
     var location: Location?
+    var reviews: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,24 @@ class LocationDetailsViewController: UIViewController {
         if let location = location {
             locationName.text = location.locationName
             locationDescription.text = location.locationDescription
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        LocationsClient.getReviews(withKey: location?.keyIdentifier ?? "") { (reviews) in
+            self.tableView.beginUpdates()
+            for (index, _) in self.reviews.enumerated().reversed() {
+                self.tableView.deleteRows(at: [IndexPath.init(row: index, section: 0)], with: .fade)
+                self.reviews.remove(at: index)
+            }
+            for (index, location) in reviews.enumerated() {
+                self.reviews.append(location)
+                self.tableView.insertRows(at: [IndexPath.init(row: index, section: 0)], with: .fade)
+            }
+            self.tableView.endUpdates()
+            self.tableView.reloadData()
         }
     }
     
@@ -59,4 +79,39 @@ extension LocationDetailsViewController {
         mapItem.name = location?.locationName
         mapItem.openInMaps(launchOptions: options)
     }
+}
+
+// MARK: - TableView Delegate and Data Source
+
+extension LocationDetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return reviews.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as? ReviewTableViewCell {
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let cell = cell as? ReviewTableViewCell {
+            cell.confugureCell(with: reviews[indexPath.row])
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
 }

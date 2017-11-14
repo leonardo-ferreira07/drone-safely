@@ -37,4 +37,21 @@ struct LocationsClient {
     static func postNewReview(withKey key: String, text: String) {
         DataHelper.shared.databaseRef.child("locations/\(key)/reviews").childByAutoId().setValue(text)
     }
+    
+    static func getReviews(withKey key: String, completion: @escaping ([String]) -> Void) {
+        let recentReviewsQuery = DataHelper.shared.databaseRef.child("locations/\(key)/reviews").queryLimited(toFirst: 500)
+        var reviews: [String] = []
+        recentReviewsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
+            for snap in snapshot.children {
+                if let snap = snap as? DataSnapshot {
+                    if var locationDict = snap.value as? String {
+                        reviews.append(locationDict)
+                    }
+                }
+            }
+            recentReviewsQuery.removeAllObservers()
+            completion(reviews)
+            print(reviews)
+        })
+    }
 }

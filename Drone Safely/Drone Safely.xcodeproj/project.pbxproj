@@ -39,6 +39,7 @@
 		A79F82421FAB53840055A3A5 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79F82411FAB53840055A3A5 /* LoginHelper.swift */; };
 		A7AA02B11FAC77160044544A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AA02B01FAC77160044544A /* SignupViewController.swift */; };
 		A7B8CFBD1FBB108F00625617 /* LocationReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8CFBC1FBB108F00625617 /* LocationReviewsViewController.swift */; };
+		A7B8CFBF1FBB20EE00625617 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8CFBE1FBB20EE00625617 /* ReviewTableViewCell.swift */; };
 		A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EC1FAF19C2005ECF52 /* Location.swift */; };
 		A7D6A1F01FAF1BA9005ECF52 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */; };
 		A7D6A1F21FAF1E32005ECF52 /* LocationsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */; };
@@ -95,6 +96,7 @@
 		A79F82411FAB53840055A3A5 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		A7AA02B01FAC77160044544A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A7B8CFBC1FBB108F00625617 /* LocationReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationReviewsViewController.swift; sourceTree = "<group>"; };
+		A7B8CFBE1FBB20EE00625617 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		A7D6A1EC1FAF19C2005ECF52 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A7D6A1EF1FAF1BA9005ECF52 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsClient.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				A7719E201FAB327600BD557A /* ListLocationTableViewCell.swift */,
+				A7B8CFBE1FBB20EE00625617 /* ReviewTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				A7719E371FAB327600BD557A /* PostLocationViewController.swift in Sources */,
 				A7719E2D1FAB327600BD557A /* DesignableButton.swift in Sources */,
 				A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */,
+				A7B8CFBF1FBB20EE00625617 /* ReviewTableViewCell.swift in Sources */,
 				A7D6A1ED1FAF19C2005ECF52 /* Location.swift in Sources */,
 				A7B8CFBD1FBB108F00625617 /* LocationReviewsViewController.swift in Sources */,
 				A71720991FB091C2009F3D65 /* DesignableTextView.swift in Sources */,
