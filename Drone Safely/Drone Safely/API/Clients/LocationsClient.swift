@@ -44,7 +44,7 @@ struct LocationsClient {
         recentReviewsQuery.observe(.value, with:{ (snapshot: DataSnapshot) in
             for snap in snapshot.children {
                 if let snap = snap as? DataSnapshot {
-                    if var locationDict = snap.value as? String {
+                    if let locationDict = snap.value as? String {
                         reviews.append(locationDict)
                     }
                 }
