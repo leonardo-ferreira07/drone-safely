@@ -21,7 +21,6 @@
 		A7719E2E1FAB327600BD557A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0B1FAB327500BD557A /* Extensions.swift */; };
 		A7719E2F1FAB327600BD557A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0C1FAB327500BD557A /* DesignableView.swift */; };
 		A7719E301FAB327600BD557A /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E0D1FAB327500BD557A /* String+Validations.swift */; };
-		A7719E311FAB327600BD557A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E101FAB327500BD557A /* APIClient.swift */; };
 		A7719E321FAB327600BD557A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E141FAB327600BD557A /* MapViewController.swift */; };
 		A7719E331FAB327600BD557A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E161FAB327600BD557A /* ListViewController.swift */; };
 		A7719E341FAB327600BD557A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7719E181FAB327600BD557A /* LoginViewController.swift */; };
@@ -78,7 +77,6 @@
 		A7719E0B1FAB327500BD557A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A7719E0C1FAB327500BD557A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		A7719E0D1FAB327500BD557A /* String+Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
-		A7719E101FAB327500BD557A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A7719E141FAB327600BD557A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A7719E161FAB327600BD557A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A7719E181FAB327600BD557A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -226,8 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				A7719E0F1FAB327500BD557A /* Clients */,
-				A7719E101FAB327500BD557A /* APIClient.swift */,
-				A7719E111FAB327500BD557A /* Constants */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -238,13 +234,6 @@
 				A7D6A1F11FAF1E32005ECF52 /* LocationsClient.swift */,
 			);
 			path = Clients;
-			sourceTree = "<group>";
-		};
-		A7719E111FAB327500BD557A /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		A7719E121FAB327600BD557A /* Controllers */ = {
@@ -606,7 +595,6 @@
 			files = (
 				A7719E351FAB327600BD557A /* BaseDroneSafelyViewController.swift in Sources */,
 				A7719E3D1FAB327600BD557A /* ParserHelper.swift in Sources */,
-				A7719E311FAB327600BD557A /* APIClient.swift in Sources */,
 				A7719E381FAB327600BD557A /* ListLocationTableViewCell.swift in Sources */,
 				A7719E391FAB327600BD557A /* LoadingViewPresenter.swift in Sources */,
 				A7D6A1F21FAF1E32005ECF52 /* LocationsClient.swift in Sources */,
