@@ -18,6 +18,10 @@ class LocationDetailsViewController: UIViewController {
     var location: Location?
     var reviews: [String] = []
     
+    enum ReviewTableCell: String {
+        case reviewCell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -94,7 +98,7 @@ extension LocationDetailsViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as? ReviewTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ReviewTableCell.reviewCell.rawValue, for: indexPath) as? ReviewTableViewCell {
             return cell
         }
         return UITableViewCell()
