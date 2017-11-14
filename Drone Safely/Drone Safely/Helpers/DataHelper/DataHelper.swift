@@ -16,6 +16,7 @@ class DataHelper {
     var databaseRef: DatabaseReference!
     
     private init() {
+        Database.database().isPersistenceEnabled = true
         databaseRef = Database.database().reference()
     }
     
