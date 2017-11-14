@@ -62,11 +62,7 @@ class BaseDroneSafelyViewController: UIViewController {
         view.stopLoadingAnimation()
     }
     
-    @IBAction func refreshStudentsLocationsPressed(_ sender: Any) {
-        
-    }
-    
-    @IBAction func addStudentLocationPressed(_ sender: Any) {
+    @IBAction func refreshLocationsPressed(_ sender: Any) {
         
     }
     

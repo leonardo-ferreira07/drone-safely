@@ -38,7 +38,7 @@ class ListViewController: BaseDroneSafelyViewController {
     
     // MARK: - Overriding Actions
     
-    override func refreshStudentsLocationsPressed(_ sender: Any) {
+    override func refreshLocationsPressed(_ sender: Any) {
         refreshLocations()
     }
 

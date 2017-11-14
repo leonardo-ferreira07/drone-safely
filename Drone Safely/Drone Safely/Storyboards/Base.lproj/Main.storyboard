@@ -110,7 +110,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="3ie-JU-Igm">
                             <connections>
-                                <action selector="refreshStudentsLocationsPressed:" destination="bBX-lm-5Nf" id="uSE-gj-9Kn"/>
+                                <action selector="refreshLocationsPressed:" destination="bBX-lm-5Nf" id="zey-Wi-S1f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -193,7 +193,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="h66-FM-1Ge">
                             <connections>
-                                <action selector="refreshStudentsLocationsPressed:" destination="BYZ-38-t0r" id="j3u-QL-TLN"/>
+                                <action selector="refreshLocationsPressed:" destination="BYZ-38-t0r" id="GQZ-eT-bLk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
