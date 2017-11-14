@@ -298,7 +298,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qGs-oW-Z3a"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Location Details" id="sVC-4c-wrv"/>
+                    <navigationItem key="navigationItem" title="Location Details" id="sVC-4c-wrv">
+                        <barButtonItem key="rightBarButtonItem" title="Comment" id="5rn-0O-lhd">
+                            <connections>
+                                <segue destination="BZM-gc-Esa" kind="show" id="Sdf-8m-Ix1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="locationDescription" destination="sUD-2s-hI8" id="zgg-Nv-Ly1"/>
                         <outlet property="locationName" destination="Upb-KG-KHF" id="iRR-NV-JPv"/>
@@ -307,6 +313,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfA-f4-OtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2701.5999999999999" y="119.1904047976012"/>
+        </scene>
+        <!--Location Reviews View Controller-->
+        <scene sceneID="1ES-Df-7Df">
+            <objects>
+                <viewController id="BZM-gc-Esa" customClass="LocationReviewsViewController" customModule="Drone_Safely" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cLl-T9-Lo9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k1B-k3-vwX" customClass="DesignableTextView" customModule="Drone_Safely" customModuleProvider="target">
+                                <rect key="frame" x="20" y="79" width="335" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="QyO-RE-rJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Add your review about this location here"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xhG-TW-932" firstAttribute="trailing" secondItem="k1B-k3-vwX" secondAttribute="trailing" constant="20" id="ggl-zR-dSy"/>
+                            <constraint firstItem="k1B-k3-vwX" firstAttribute="top" secondItem="xhG-TW-932" secondAttribute="top" constant="15" id="p6G-Rb-aRr"/>
+                            <constraint firstItem="k1B-k3-vwX" firstAttribute="leading" secondItem="xhG-TW-932" secondAttribute="leading" constant="20" id="pvv-0j-Ihj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xhG-TW-932"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cSH-dq-s1T">
+                        <barButtonItem key="rightBarButtonItem" title="Send review" id="TxO-KM-9Ln">
+                            <connections>
+                                <action selector="sendReviewPressed:" destination="BZM-gc-Esa" id="4ql-HX-5dZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="k1B-k3-vwX" id="8Vq-x6-18t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixf-mb-1dU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3530" y="119"/>
         </scene>
     </scenes>
     <resources>

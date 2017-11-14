@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase
+import Firebase
 
 struct LocationsClient {
     
@@ -31,5 +32,9 @@ struct LocationsClient {
             completion(locations)
             print(locations)
         })
+    }
+    
+    static func postNewReview(withKey key: String, text: String) {
+        DataHelper.shared.databaseRef.child("locations/\(key)/reviews").childByAutoId().setValue(text)
     }
 }

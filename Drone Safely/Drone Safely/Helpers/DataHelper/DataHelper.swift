@@ -6,7 +6,7 @@
 //  Copyright © 2017 Leonardo Vinicius Kaminski Ferreira. All rights reserved.
 //
 
-import Foundation
+import Firebase
 import FirebaseDatabase
 
 class DataHelper {

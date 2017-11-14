@@ -25,6 +25,12 @@ class LocationDetailsViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? LocationReviewsViewController {
+            viewController.location = location
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func navigateButtonPressed(_ sender: Any) {
