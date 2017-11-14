@@ -80,7 +80,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-// MARK: - Refresh Students Locations
+// MARK: - Refresh Locations
 
 extension ListViewController {
     func refreshLocations() {

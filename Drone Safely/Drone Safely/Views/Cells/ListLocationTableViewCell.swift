@@ -1,5 +1,5 @@
 //
-//  ListStudentTableViewCell.swift
+//  ListLocationTableViewCell.swift
 //  Drone Safely
 //
 //  Created by Leonardo Vinicius Kaminski Ferreira on 02/11/17.
