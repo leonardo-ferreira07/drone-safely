@@ -14,6 +14,7 @@ class LocationDetailsViewController: UIViewController {
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var locationDescription: UITextView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var commentButton: UIBarButtonItem!
     
     var location: Location?
     var reviews: [String] = []
@@ -33,6 +34,12 @@ class LocationDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if LoginHelper.userIsNotLoggedIn {
+            commentButtonEnabled(false)
+        } else {
+            commentButtonEnabled(true)
+        }
         
         LocationsClient.getReviews(withKey: location?.keyIdentifier ?? "") { (reviews) in
             if reviews.isEmpty {
@@ -134,4 +141,7 @@ extension LocationDetailsViewController {
         tableView.isHidden = hidden
     }
     
+    func commentButtonEnabled(_ enabled: Bool) {
+        commentButton.isEnabled = enabled
+    }
 }

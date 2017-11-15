@@ -355,6 +355,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="commentButton" destination="5rn-0O-lhd" id="eMg-0H-82W"/>
                         <outlet property="locationDescription" destination="sUD-2s-hI8" id="zgg-Nv-Ly1"/>
                         <outlet property="locationName" destination="Upb-KG-KHF" id="iRR-NV-JPv"/>
                         <outlet property="tableView" destination="qul-sZ-wqj" id="Q1R-Tj-qw1"/>
