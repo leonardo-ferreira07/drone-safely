@@ -49,14 +49,15 @@ class SignupViewController: UIViewController {
         }
         if let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text, email.isValidEmail(), !password.isEmpty, !name.isEmpty {
             Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-                self.view.stopLoadingAnimation()
                 if let error = error {
+                    self.view.stopLoadingAnimation()
                     self.showAlert("Sign Up Error", message: error.localizedDescription)
                     return
                 }
                 let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                 changeRequest?.displayName = name
                 changeRequest?.commitChanges { (error) in
+                    self.view.stopLoadingAnimation()
                     if let error = error {
                         print(error)
                         return
