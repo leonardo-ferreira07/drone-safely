@@ -35,6 +35,12 @@ class LocationDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         LocationsClient.getReviews(withKey: location?.keyIdentifier ?? "") { (reviews) in
+            if reviews.isEmpty {
+                self.hideTableView(true)
+                return
+            } else {
+                self.hideTableView(false)
+            }
             self.tableView.beginUpdates()
             for (index, _) in self.reviews.enumerated().reversed() {
                 self.tableView.deleteRows(at: [IndexPath.init(row: index, section: 0)], with: .fade)
@@ -116,6 +122,16 @@ extension LocationDetailsViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+}
+
+// MARK: - Layout configs
+
+extension LocationDetailsViewController {
+    
+    func hideTableView(_ hidden: Bool) {
+        tableView.isHidden = hidden
     }
     
 }
