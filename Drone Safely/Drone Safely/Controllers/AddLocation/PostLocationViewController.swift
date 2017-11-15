@@ -56,18 +56,13 @@ extension PostLocationViewController {
         resignTextFields()
         
         guard let locationName = locationNameTextField.text, locationName.count > 0 else {
-            showAlert("Location Error", message: "You must insert a location before continue.")
-            return
-        }
-        
-        guard let locationDescription = descriptionTextView.text, locationDescription.count > 0 else {
-            showAlert("Location Error", message: "You must insert a media link before continue.")
+            showAlert("Location Error", message: "You must insert a location name before continue.")
             return
         }
         
         view.startLoadingAnimation()
         let location = Location(locationName: locationName,
-                                locationDescription: locationDescription,
+                                locationDescription: descriptionTextView.text,
                                 latitude: coordinate?.latitude ?? 0,
                                 longitude: coordinate?.longitude ?? 0)
         LocationsClient.postNewLocation(location)
