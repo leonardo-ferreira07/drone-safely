@@ -12,7 +12,7 @@ import CoreLocation
 class PostLocationViewController: BaseDroneSafelyViewController {
 
     @IBOutlet weak var locationNameTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var stackView: UIStackView!
     
     var coordinate: CLLocationCoordinate2D?
@@ -60,7 +60,7 @@ extension PostLocationViewController {
             return
         }
         
-        guard let locationDescription = descriptionTextField.text, locationDescription.count > 0 else {
+        guard let locationDescription = descriptionTextView.text, locationDescription.count > 0 else {
             showAlert("Location Error", message: "You must insert a media link before continue.")
             return
         }
@@ -102,6 +102,6 @@ extension PostLocationViewController {
 extension PostLocationViewController {
     func resignTextFields() {
         locationNameTextField.resignFirstResponder()
-        descriptionTextField.resignFirstResponder()
+        descriptionTextView.resignFirstResponder()
     }
 }

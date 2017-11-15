@@ -98,6 +98,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionTextView" destination="6Wz-3Q-TBD" id="cnY-0F-tbx"/>
                         <outlet property="locationNameTextField" destination="IbC-KY-HiW" id="Vgw-SG-hpG"/>
                         <outlet property="stackView" destination="get-PE-K3x" id="F5S-my-ldO"/>
                     </connections>
