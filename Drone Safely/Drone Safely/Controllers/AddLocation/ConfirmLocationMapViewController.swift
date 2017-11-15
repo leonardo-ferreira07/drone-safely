@@ -11,6 +11,10 @@ import MapKit
 
 class ConfirmLocationMapViewController: UIViewController {
 
+    enum PinIdentifier: String {
+        case pin
+    }
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var coordinate: CLLocationCoordinate2D?
@@ -55,24 +59,38 @@ extension ConfirmLocationMapViewController {
             self.mapView.setRegion(region, animated: true)
             let point = MKPointAnnotation()
             point.coordinate = coordinate
-            let userAnnotationView: MKAnnotationView = MKAnnotationView(annotation: point, reuseIdentifier: nil)
-            userAnnotationView.isDraggable = true
+            let userAnnotationView = MKAnnotationView(annotation: point, reuseIdentifier: nil)
             self.mapView.addAnnotation(userAnnotationView.annotation!)
             self.mapView.showsUserLocation = true
         }
     }
 }
 
-extension PostLocationViewController: MKMapViewDelegate {
+extension ConfirmLocationMapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
         switch newState {
-        case .starting:
-            view.dragState = .dragging
         case .ending, .canceling:
             self.coordinate = view.annotation?.coordinate
             view.dragState = .none
         default: break
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        var view = mapView.dequeueReusableAnnotationView(withIdentifier: PinIdentifier.pin.rawValue)
+        
+        if annotation.coordinate.latitude == mapView.userLocation.coordinate.latitude && annotation.coordinate.longitude == mapView.userLocation.coordinate.longitude {
+            return nil
+        }
+        
+        if let view = view {
+            view.annotation = annotation
+        } else {
+            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: PinIdentifier.pin.rawValue)
+            view?.isDraggable = true
+        }
+        
+        return view
     }
 }
