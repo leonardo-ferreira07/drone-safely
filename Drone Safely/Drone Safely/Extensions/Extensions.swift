@@ -32,6 +32,12 @@ extension UIViewController: SFSafariViewControllerDelegate {
         present(alert, animated: true, completion: nil)
     }
     
+    func presentActivityIndicator(_ present: Bool) {
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = present
+        }
+    }
+    
 }
 
 

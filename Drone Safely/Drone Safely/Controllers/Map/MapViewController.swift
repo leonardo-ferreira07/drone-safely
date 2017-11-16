@@ -95,7 +95,9 @@ extension MapViewController {
     func refreshLocations() {
         refreshButton(enabled: false)
         
+        presentActivityIndicator(true)
         LocationsClient.getLocations { (locations) in
+            self.presentActivityIndicator(false)
             self.refreshButton(enabled: true)
             self.addLocationsToMap(locations)
         }
