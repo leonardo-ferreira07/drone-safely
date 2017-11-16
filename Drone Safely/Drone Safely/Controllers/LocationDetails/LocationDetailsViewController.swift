@@ -30,6 +30,8 @@ class LocationDetailsViewController: UIViewController {
             locationName.text = location.locationName
             locationDescription.text = location.locationDescription
         }
+        
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
