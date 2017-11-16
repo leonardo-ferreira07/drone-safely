@@ -19,6 +19,7 @@ class MapViewController: BaseDroneSafelyViewController {
     var locationManager: LocationManagerHelper!
     var canAddPin: Bool = true
     var locations: [(Location, MKPointAnnotation)] = []
+    let reachability = Reachability()!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +95,11 @@ extension MapViewController {
 
 extension MapViewController {
     func refreshLocations() {
+        guard reachability.connection != .none else {
+            showAlert("Connection Error", message: "Seems that you don't have internet connection.")
+            return
+        }
+        
         refreshButton(enabled: false)
         
         presentActivityIndicator(true)
