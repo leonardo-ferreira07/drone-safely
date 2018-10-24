@@ -46,7 +46,7 @@ extension LocationManagerHelper: CLLocationManagerDelegate {
         
         if currentLocation == nil {
             if let userLocation = locations.last {
-                let viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 2000, 2000)
+                let viewRegion = MKCoordinateRegion(center: userLocation.coordinate, latitudinalMeters: 2000, longitudinalMeters: 2000)
                 delegate?.didReceiveRegion(viewRegion)
             }
         }

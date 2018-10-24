@@ -53,9 +53,9 @@ extension ConfirmLocationMapViewController {
             let longitude = coordinate.longitude
             let latDelta: CLLocationDegrees = 0.005
             let lonDelta: CLLocationDegrees = 0.005
-            let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
             let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-            let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
             self.mapView.setRegion(region, animated: true)
             let point = MKPointAnnotation()
             point.coordinate = coordinate
@@ -68,7 +68,7 @@ extension ConfirmLocationMapViewController {
 
 extension ConfirmLocationMapViewController: MKMapViewDelegate {
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
         switch newState {
         case .ending, .canceling:
             self.coordinate = view.annotation?.coordinate

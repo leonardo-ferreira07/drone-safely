@@ -176,9 +176,9 @@ extension MapViewController {
             performSegue(withIdentifier: "goToLocationStoryboard", sender: newCoordinates)
         }
         
-        if gestureRecognizer.state == UIGestureRecognizerState.began {
+        if gestureRecognizer.state == UIGestureRecognizer.State.began {
             canAddPin = false
-        } else if gestureRecognizer.state == UIGestureRecognizerState.ended {
+        } else if gestureRecognizer.state == UIGestureRecognizer.State.ended {
             canAddPin = true
         }
         
